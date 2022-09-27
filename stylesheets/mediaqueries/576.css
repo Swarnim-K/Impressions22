@@ -1,0 +1,30 @@
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {  
+
+    .mainTitle img{
+        width: 80%;
+    }
+
+    .navbar-icon{
+        display: none;
+    }
+
+    #headline {
+        font-size: 8vh;
+        margin-bottom: 8vh;
+        letter-spacing: 1vh;
+    }
+      
+    #countdown ul li {
+        font-size: 2vh;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        width: 15vw;
+    }
+      
+    #countdown ul li span {
+        font-size: 10vh;
+    }
+    
+}

@@ -1,0 +1,21 @@
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {  
+
+    #headline {
+        font-size: 8vh;
+        margin-bottom: 8vh;
+        letter-spacing: 1vh;
+    }
+      
+    #countdown ul li {
+        font-size: 4vh;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        width: 16vw;
+    }
+      
+    #countdown ul li span {
+        font-size: 10vh;
+    }
+    
+}

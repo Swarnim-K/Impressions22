@@ -1,0 +1,36 @@
+@media (min-width: 1200px) and (max-width: 1399.98px) {  
+    
+    #headline {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 8vh;
+        margin-bottom: 8vh;
+        letter-spacing: 1vh;
+        text-transform: uppercase;
+    }
+      
+    #countdown ul li {
+        font-family: 'Poppins', sans-serif;
+        display: inline-block;
+        font-size: 4vh;
+        list-style-type: none;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        text-transform: uppercase;
+        color: white;
+        width: 14vw;
+        background-color: transparent;
+        text-align: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+      
+    #countdown ul li span {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        display: block;
+        font-size: 14vh;
+        text-align: center;
+    }
+    
+}

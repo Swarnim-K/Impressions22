@@ -1,0 +1,35 @@
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    
+    .mainTitle img{
+        width: 80%;
+    }
+
+    .navbar-icon{
+        display: none;
+    }
+
+    .countdown-container {
+        top: 85vh;
+    }
+
+    #headline {
+        font-size: 5vh;
+        margin-bottom: 8vh;
+        letter-spacing: 0.3vh;
+    }
+      
+    #countdown ul li {
+        font-size: 1.2vh;
+        list-style-type: none;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        width: 15vw;
+    }
+      
+    #countdown ul li span {
+        font-size: 5vh;
+    }
+    
+
+}
