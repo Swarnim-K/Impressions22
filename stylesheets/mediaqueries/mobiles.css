@@ -10,12 +10,12 @@
     }
 
     .countdown-container {
-        top: 85vh;
+        top: 70vh;
     }
 
     #headline {
         font-size: 5vh;
-        margin-bottom: 8vh;
+        margin-bottom: 5vh;
         letter-spacing: 0.3vh;
     }
       
@@ -35,7 +35,7 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        top: 120vh;
+        top: 100vh;
         left: 0;
         width: 100%;
         height: 100vh;
