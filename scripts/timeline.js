@@ -16,6 +16,6 @@ gsap.from(".moduletext", {
     stagger: 0.25,
     scrollTrigger: {
         trigger: ".moduletext",
-        toggleActions: "restart none none none"
+        toggleActions: "play none none none"
     }
 })

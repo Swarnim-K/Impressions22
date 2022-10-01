@@ -1,5 +1,9 @@
 @media (min-width: 992px) and (max-width: 1199.98px) { 
 
+    .underwater {
+        height: 180vh;
+    }
+
     #headline {
         text-align: center;
         font-family: 'Poppins', sans-serif;
@@ -77,4 +81,8 @@
     .moduletext{
         font-size: 4vh;
     }
+
+    .custom-btn {
+        width: 35%;
+      }
 }

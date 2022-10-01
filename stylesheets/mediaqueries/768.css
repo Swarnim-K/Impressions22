@@ -9,6 +9,10 @@
         top: 70vh;
     }
 
+    .underwater {
+        height: 150vh;
+    }
+
     #headline {
         font-size: 5vh;
         margin-bottom: 3vh;
@@ -70,4 +74,16 @@
     .moduletext{
         font-size: 4vh;
     }
+
+    .calltoAction{
+        top: 220vh;
+    }
+
+    .custom-btn {
+        width: 40%;
+        height: 7vh;
+        font-size: 2.5vh;
+        font-weight: 500;
+      }
+
 }
