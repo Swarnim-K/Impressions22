@@ -10,12 +10,38 @@
         display: none;
     }
 
+    .expanding-button{
+        display: flex;
+        justify-content: end;
+        width: 30%;
+    }
+
+    .expanding-button img{
+        width: 5vh;
+    }
+
+    .collapsing-button{
+        position: absolute;
+        top: 3vh;
+        right: 5vh;
+        display: flex;
+    }
+
+    .collapsing-button img{
+        width: 4vh;
+        z-index: 1100;
+    }
+
     .countdown-container {
         top: 70vh;
     }
 
     .underwater {
         height: 120vh;
+    }
+
+    .siteLogo img{
+        height: 15vh;
     }
 
     #headline {
@@ -80,13 +106,16 @@
 
     .calltoAction{
         top: 195vh;
+        flex-direction: column;
+    }
+    
+    .calltoaction-link{
+        width: 100%;
+        margin-bottom: 3vh;
     }
 
-    .custom-btn {
-        width: 40%;
-        height: 7vh;
-        padding: 0;
-        font-size: 2vh;
-        font-weight: 500;
-      }
+    .calltoaction-btn{
+        width: 55%;
+    }
+
 }

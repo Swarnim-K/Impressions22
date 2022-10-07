@@ -3,6 +3,19 @@
     .underwater {
         height: 180vh;
     }
+    
+    .siteLogo img{
+        height: 15vh;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .mainTitle img{
+        width: 70%;
+        transform: translateY(-5vh);
+    }
 
     #headline {
         text-align: center;

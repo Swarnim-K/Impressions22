@@ -29,26 +29,57 @@
 }
 
 .navbar{
-    margin-top: 1vh;
     position: fixed;
     top: 0;
-    left: 0;
-    z-index: 1000;
-    width: 100%;
+    right: 0;
+    z-index: 500;
+    width: 90%;
     height: 8vh;
-    background-image: var(--transparentv3);
     display: flex;
     align-items: center;
+    justify-content: end;
+}
+
+.glassmorphic{
+    background: rgba(255, 255, 255, 0.32);
+    backdrop-filter: blur(8.1px);
+    -webkit-backdrop-filter: blur(8.1px);
+    animation-duration: 300ms;
+    animation-name: fadein;
+}
+
+@keyframes fadein {
+    10%{
+        opacity: 0.1;
+    }
+    30%{
+        opacity: 0.3;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    70%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .siteLogo{
-    width: 65%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 10%;
 }
 
 .siteLogo img{
     object-fit: cover;
     height: 8vh;
-    margin-left: 1vw;
 }
 
 .navbar-icon a{
@@ -58,8 +89,8 @@
     margin-right: 2vw;
     text-decoration: none;
     font-weight: 600;
-    font-size: 4vh;
-    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 3.5vh;
+    font-family: 'Poppins', sans-serif;
 }
 
 .titleBlock {
@@ -129,12 +160,19 @@
     position: absolute;
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     top: 260vh;
 }
 
-.custom-btn {
-    width: 30%;
+.calltoaction-link{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    text-decoration: none;
+}
+
+.calltoaction-btn {
     height: 7vh;
     color: #fff;
     padding: 10px 25px;
@@ -151,46 +189,52 @@
      4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
     z-index: 100;
-  }
+    text-align: center;
+}
 
-.btn-11 {
+.calltoaction-innerbtn {
     border: none;
     background-color: var(--s2);
     color: #fff;
     overflow: hidden;
-  }
+}
 
-  .btn-11:hover {
-      text-decoration: none;
-      color: #fff;
-  }
+.calltoaction-innerbtn:hover {
+    text-decoration: none;
+    color: #fff;
+}
 
-  .btn-11:before {
-      position: absolute;
-      content: '';
-      display: inline-block;
-      top: -180px;
-      left: 0;
-      width: 30px;
-      height: 100%;
-      background-color: #fff;
-      animation: shiny-btn1 3s ease-in-out infinite;
-  }
-  .btn-11:hover{
+.calltoaction-innerbtn:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn 3s ease-in-out infinite;
+}
+
+.calltoaction-innerbtn:hover{
     opacity: .7;
-  }
+}
 
-  .btn-11:active{
+.calltoaction-innerbtn:active{
     box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
                 -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-      inset -4px -4px 6px 0 rgba(255,255,255,.2),
-      inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
-  }
-  
-  
-  @keyframes shiny-btn1 {
-      0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
-      80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
-      81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
-      100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
-  }
+                inset -4px -4px 6px 0 rgba(255,255,255,.2),
+                inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+#preevents-btn{
+    background-color: var(--v3);
+}
+
+
+@keyframes shiny-btn {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}

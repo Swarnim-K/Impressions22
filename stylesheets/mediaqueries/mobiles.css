@@ -9,12 +9,42 @@
         display: none;
     }
 
+    .expanding-button{
+        display: flex;
+        justify-content: end;
+        width: 30%;
+    }
+
+    .expanding-button img{
+        width: 5vh;
+    }
+
+    .collapsing-button{
+        position: absolute;
+        top: 3vh;
+        right: 3vh;
+        display: flex;
+    }
+
+    .collapsing-button img{
+        width: 4vh;
+        z-index: 1100;
+    }
+
     .countdown-container {
         top: 70vh;
     }
 
     .underwater {
-        height: 120vh;
+        height: 140vh;
+    }
+
+    .siteLogo{
+        width: 20%;
+    }
+
+    .siteLogo img{
+        height: 12vh;
     }
 
     #headline {
@@ -79,14 +109,23 @@
     }
 
     .calltoAction{
-        top: 210vh;
+        top: 215vh;
+        flex-direction: column;
+    }
+    
+    .calltoaction-link{
+        width: 100%;
+        margin-bottom: 3vh;
     }
 
-    .custom-btn {
-        width: 60%;
-        height: 5vh;
-        padding: 0;
+    .calltoaction-btn{
+        width: 55%;
         font-size: 1.8vh;
-        font-weight: 500;
-      }
+    }
+
+    .nav__list-item{
+        margin-bottom: 3vh;
+        font-size: 4vh;
+    }
+
 }

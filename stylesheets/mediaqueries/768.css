@@ -1,6 +1,10 @@
 /* Medium devices (tablets, less than 992px) */
 @media (min-width: 768px) and (max-width: 991.98px) {  
 
+    .navbar-icon a{
+        font-size: 2.5vh;
+    }
+    
     .mainTitle img{
         width: 70%;
     }
@@ -9,9 +13,23 @@
         top: 70vh;
     }
 
+    .menu-icon {
+        display: none;
+    }
+
     .underwater {
         height: 150vh;
     }
+
+    .siteLogo img{
+        height: 15vh;
+    }
+
+    .mainTitle img{
+        width: 70%;
+        transform: translateY(-5vh);
+    }
+    
 
     #headline {
         font-size: 5vh;
@@ -77,13 +95,16 @@
 
     .calltoAction{
         top: 220vh;
+        flex-direction: column;
+    }
+    
+    .calltoaction-link{
+        width: 100%;
+        margin-bottom: 3vh;
     }
 
-    .custom-btn {
-        width: 40%;
-        height: 7vh;
-        font-size: 2.5vh;
-        font-weight: 500;
-      }
+    .calltoaction-btn{
+        width: 50%;
+    }
 
 }
