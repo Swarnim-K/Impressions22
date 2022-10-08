@@ -5,8 +5,19 @@
         display: none;
     }
 
+    .menu-icon {
+        top: 3vh;
+        right: 3vh;
+    }
+
     .underwater {
-        height: 380vh;
+        height: 400vh;
+        overflow-y: hidden;
+    }
+
+    .nav__list-item{
+        margin-bottom: 3vh;
+        font-size: 3.5vh;
     }
     
     .siteLogo{
@@ -49,13 +60,13 @@
     }
     
     .eventsTitle {
-        padding-top: 2vh;
+        padding-top: 1vh;
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
-        font-size: 11vh;
-        letter-spacing: 1vh;
+        font-size: 6vh;
+        letter-spacing: 0.5vh;
         font-weight: 800;
         font-family: 'Poppins', sans-serif;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
@@ -89,13 +100,13 @@
     }
     
     .rulesTitle {
-        padding-top: 2vh;
+        padding-top: 1vh;
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
-        font-size: 11vh;
-        letter-spacing: 1vh;
+        font-size: 6vh;
+        letter-spacing: 0.5vh;
         font-weight: 800;
         font-family: 'Poppins', sans-serif;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;

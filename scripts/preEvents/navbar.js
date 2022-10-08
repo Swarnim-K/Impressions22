@@ -3,7 +3,7 @@ const sitelogo = document.querySelector(".siteLogo")
 const eventsSection = document.querySelector(".eventsSection")
 
 window.addEventListener("scroll", () => {
-    if (innerWidth >= 768) {
+    if (innerWidth >= 992) {
         if (window.scrollY > eventsSection.offsetTop) {
             sitelogo.classList.add("glassmorphic")
             navbar.classList.add("glassmorphic")
