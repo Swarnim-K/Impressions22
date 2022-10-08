@@ -26,6 +26,10 @@
         height: 12vh;
     }
 
+    .countdown-container {
+        top: 70vh;
+    }
+
     #headline {
         font-size: 5vh;
         margin-bottom: 5vh;
@@ -98,8 +102,8 @@
     }
 
     .calltoaction-btn{
-        width: 55%;
-        font-size: 1.8vh;
+        width: 60%;
+        font-size: 1.5vh;
     }
 
 }

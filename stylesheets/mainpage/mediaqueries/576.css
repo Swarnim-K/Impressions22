@@ -10,28 +10,6 @@
         display: none;
     }
 
-    .expanding-button{
-        display: flex;
-        justify-content: end;
-        width: 30%;
-    }
-
-    .expanding-button img{
-        width: 5vh;
-    }
-
-    .collapsing-button{
-        position: absolute;
-        top: 3vh;
-        right: 5vh;
-        display: flex;
-    }
-
-    .collapsing-button img{
-        width: 4vh;
-        z-index: 1100;
-    }
-
     .countdown-container {
         top: 70vh;
     }
@@ -58,7 +36,7 @@
     }
       
     #countdown ul li span {
-        font-size: 9vh;
+        font-size: 7vh;
     }
     
     .aboutUsSection{
@@ -116,6 +94,7 @@
 
     .calltoaction-btn{
         width: 55%;
+        font-size: 1.8vh;
     }
 
 }
