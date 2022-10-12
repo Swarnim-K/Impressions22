@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressions - Pop Culture Fiesta </title>
     <link rel="shortcut icon" href="../images/ImpressionsFoot.png" type="image/x-icon">
+        <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../stylesheets/openmicform/landscape.css">
     <link rel="stylesheet" href="../stylesheets/openmicform/styles.css">
     <link rel="stylesheet" href="../stylesheets/openmicform/mediaqueries/mobiles.css">
@@ -115,6 +117,26 @@
                 </div>
 
             </form>
+            
+            <section class="gallery" id="gallery">
+                <div class="titleD">
+                    <p class="titleP">Gallery</p>
+                    <p class="titleP2">Check our gallery from the recent events</p>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"> <img src="imgGallery/d1.jpg" /> </div>
+                        <div class="swiper-slide"> <img src="imgGallery/d2.jpg" /> </div>
+                        <div class="swiper-slide"> <img src="imgGallery/d3.jpg" /> </div>
+                        <div class="swiper-slide"> <img src="imgGallery/d4.jpg" /> </div>
+                        <div class="swiper-slide"> <img src="imgGallery/d5.jpg" /> </div>
+                        <div class="swiper-slide"> <img src="imgGallery/d6.jpg" /> </div>
+                        <div class="swiper-slide"> <img src="imgGallery/d7.jpg" /> </div>
+                        <div class="swiper-slide"> <img src="imgGallery/d8.jpg" /> </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
         </div>
 
     </div>
@@ -137,6 +159,31 @@
                 .then(response => alert("Thanks for contacting us"))
                 .catch(error => console.error("Error!", error.message))
         })
+    </script>
+    
+        <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: false,
+            },
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+        });
     </script>
 </body>
 
