@@ -112,7 +112,7 @@
       
     .form-text-label{
         /* color:#999;  */
-        color: #180b3b;
+        color: black;
         font-size:12px;
         font-weight:900;
         position:absolute;
@@ -127,8 +127,8 @@
       /* active state */
     .form-text-input:focus ~ .form-text-label, .form-text-input:valid ~ .form-text-label {
         top:-20px;
-        font-size:14px;
-        color:#5264AE;
+        font-size:8px;
+        color:white;
     }
       
       /* BOTTOM BARS ================================= */
@@ -272,7 +272,7 @@
     
     .form-checkbox-label{
         color:var(--v9); 
-        font-size: 2.5vh;
+        font-size: 2vh;
         font-weight: 900;
     }
     

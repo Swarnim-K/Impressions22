@@ -30,7 +30,7 @@
         var(--v9)
         );
     width: 100%;
-    height: 160vh;
+    height: 100vh;
 }
 
 
@@ -112,6 +112,7 @@
     display:block;
     width: 30vw;
     border:none;
+    color: white;
     background-color: transparent;
     border-bottom:1px solid var(--v9);
     border-right:1px solid var(--v9);
@@ -125,7 +126,8 @@
   /* LABEL ======================================= */
   
 .form-text-label{
-    color:#999; 
+    /* color:#999;  */
+    color: white;
     font-size:18px;
     font-weight:normal;
     position:absolute;
@@ -141,8 +143,9 @@
   /* active state */
 .form-text-input:focus ~ .form-text-label, .form-text-input:valid ~ .form-text-label {
     top:-20px;
-    font-size:14px;
-    color:#5264AE;
+    font-size:10px;
+    /* color:#5264AE; */
+    color: white;
 }
   
   /* BOTTOM BARS ================================= */
@@ -280,7 +283,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .form-checkbox-label{
-    color:var(--v4); 
+    color:white; 
     font-size: 2.5vh;
     font-family: 'Poppins', sans-serif;
 }
