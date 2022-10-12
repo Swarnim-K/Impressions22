@@ -1,0 +1,113 @@
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {  
+
+    .underwater {
+        height: 320vh;
+    }
+    
+    .menu-icon {
+        top: 3vh;
+        right: 3vh;
+    }
+
+    .siteLogo{
+        width: 15%;
+    }
+
+    .siteLogo img{
+        height: 12vh;
+    }
+
+    .navbar-icon{
+        display: none;
+    }
+
+    .nav__list-item{
+        margin-bottom: 3vh;
+        font-size: 5vh;
+    }
+
+    .titleLogo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titleName{
+        font-size: 10vh;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .titleDescription{
+        font-size: 4vh;
+    }
+
+    .eventsSection{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 100vh;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .eventsTitle {
+        padding-top: 1vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 8vh;
+        letter-spacing: 1vh;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+
+    .cards-column-one{
+        margin-top: 5vh;
+    }
+    
+    .cards-column-two{
+        margin-top: 5vh;
+    }
+
+    .card{
+        width: 30%;
+        height: 25vh;
+    }
+
+
+
+    .rulesSection{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 180vh;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .rulesTitle {
+        padding-top: 1vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 8vh;
+        letter-spacing: 1vh;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+
+    .rule{
+        font-size: 3vh;
+        margin: 2vh;
+    }
+
+}

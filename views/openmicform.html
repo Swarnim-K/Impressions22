@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressions - Pop Culture Fiesta </title>
+    <link rel="shortcut icon" href="../images/ImpressionsFoot.png" type="image/x-icon">
+    <link rel="stylesheet" href="../stylesheets/openmicform/landscape.css">
+    <link rel="stylesheet" href="../stylesheets/openmicform/styles.css">
+    <link rel="stylesheet" href="../stylesheets/openmicform/mediaqueries/mobiles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <a href="../index.html" title="backtomainpage">
+        <div class="siteLogo">
+            <img src="../images/mainpage/ImpressionsFoot.png" alt="">
+        </div>
+    </a>
+
+    <div class="landscape">
+        <div class="cloud"></div>
+        <div class="cloud cloud-1"></div>
+        <div class="water"></div>
+    </div>
+
+    <div class="main-body-container">
+        <div class="formSectionLeft">
+            <div class="formtitle">
+                Open Mic Event
+            </div>
+            <div class="formDescription">
+
+            </div>
+            <div class="formImage">
+                <img src="../images/microphone.jpg" alt="">
+            </div>
+        </div>
+        <div class="formSectionRight">
+            <form method="post" name="google-sheet">
+
+                <div class="group">
+                    <input name="name" class="form-text-input" type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="form-text-label">Name</label>
+                </div>
+
+                <div class="group">
+                    <input name="email" class="form-text-input" type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="form-text-label">Email</label>
+                </div>
+
+                <div class="group">
+                    <input name="phone" class="form-text-input" type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="form-text-label">Phone Number</label>
+                </div>
+
+                <div class="group">
+                    <input name="college-organisation" class="form-text-input" type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="form-text-label">College/Organisation</label>
+                </div>
+
+                <div class="group">
+                    <input name="mis" class="form-text-input" type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="form-text-label">MIS (COEP Student)</label>
+                </div>
+
+                <div class="events-options-list">
+                    <div class="event-option">
+                        <input class="form-checkbox-input" type="checkbox" id="event-1" name="event-1">
+                        <label class="form-checkbox-label" for="event-1">Event One</label>
+                    </div>
+                    <div class="event-option">
+                        <input class="form-checkbox-input" type="checkbox" id="event-2" name="event-2">
+                        <label class="form-checkbox-label" for="event-2">Event Two</label>
+                    </div>
+                    <div class="event-option">
+                        <input class="form-checkbox-input" type="checkbox" id="event-3" name="event-3">
+                        <label class="form-checkbox-label" for="event-3">Event Three</label>
+                    </div>
+                    <div class="event-option">
+                        <input class="form-checkbox-input" type="checkbox" id="event-4" name="event-4">
+                        <label class="form-checkbox-label" for="event-4">Event Four</label>
+                    </div>
+                    <div class="event-option">
+                        <input class="form-checkbox-input" type="checkbox" id="event-5" name="event-5">
+                        <label class="form-checkbox-label" for="event-5">Event Five</label>
+                    </div>
+                </div>
+
+                <div class="submit-button">
+                    <button class="calltoaction-btn calltoaction-innerbtn" type="submit" id="events-submit-btn">
+                        Submit
+                        <div class="dot">
+                        </div>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../scripts/preEvents/timeline.js"></script>
+    <script>
+        const scriptURL = "https://script.google.com/macros/s/AKfycbwZXtxXtRbc65a8j87WFXsxAd7GtgGOlKLt-xRdF3jhcymz5EbxRSRc4j3qzS_R_Xd7Jg/exec";
+        const form = document.forms["google-sheet"]
+
+        form.addEventListener("submit", e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: "POST", body: new FormData(form) })
+                .then(response => alert("Thanks for contacting us"))
+                .catch(error => console.error("Error!", error.message))
+        })
+    </script>
+</body>
+
+</html>
