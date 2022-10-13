@@ -18,7 +18,7 @@
   }
 
 
-.underwater {
+/* .underwater {
     background: linear-gradient(
         var(--v2), 
         var(--v3), 
@@ -32,7 +32,7 @@
     width: 100%;
     height: 400vh;
     z-index: -100;
-}
+} */
 
 
 .siteLogo{
@@ -58,6 +58,16 @@
   z-index: 100;
   display: flex;
   width: 100%;
+  background: linear-gradient(
+    var(--v2), 
+    var(--v3), 
+    var(--v4), 
+    var(--v5), 
+    var(--v6), 
+    var(--v7), 
+    var(--v8), 
+    var(--v9)
+    );
 }
 
 .formSectionLeft{
@@ -379,6 +389,7 @@ input[type="checkbox"]:checked::before {
     overflow: hidden;
     height: 550px;
     width: 100%;
+    z-index: 100;
     user-select: none;
 }
 
@@ -471,6 +482,17 @@ input[type="checkbox"]:checked::before {
 }  
 
 .titleD .titleP2{
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: 700;
 }   
+
+
+/* Google Map */
+
+.location-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
