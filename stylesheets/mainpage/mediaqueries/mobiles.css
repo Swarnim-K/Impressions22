@@ -31,10 +31,6 @@
         font-size: 4vh;
     }
 
-    .underwater {
-        height: 140vh;
-    }
-
     .siteLogo{
         width: 20%;
     }
@@ -44,7 +40,7 @@
     }
 
     .countdown-container {
-        transform: translateY(var(--displace));
+
         margin-bottom: 2em;
     }
 
@@ -72,7 +68,7 @@
         flex-direction: column;
         width: 100%;
         z-index: 100;
-        transform: translateY(var(--displace));
+        transform: translateY(-12em);
     }
     
     .aboutUsTitle {
@@ -110,7 +106,7 @@
 
     .calltoAction{
         flex-direction: column;
-        transform: translateY(var(--displace));
+
     }
     
     .calltoaction-link{

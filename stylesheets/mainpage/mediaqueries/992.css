@@ -1,98 +1,123 @@
 @media (min-width: 992px) and (max-width: 1199.98px) { 
 
-    .underwater {
-        height: 180vh;
+    :root {
+        --v1: #be91c6;
+        --v2: #8a65cc;
+        --v3: #5e30d9;
+        --v4: #3b1895;
+        --v5: #361785;
+        --v6: #2e1470;
+        --v7: #27115e;
+        --v8: #1e0d49;
+        --v9: #180b3b;
+        --s1: #fea798;
+        --s2: #ff846e;
+        --cloud: #fea798;
+        --displace: -18.5em
+      }
+
+
+    .mainTitle img{
+        width: 80%;
     }
 
-    .siteLogo img{
-        height: 15vh;
-    }
-
-    .menu-icon {
+    .navbar-icon{
         display: none;
     }
 
-    .mainTitle img{
-        width: 70%;
-        transform: translateY(-5vh);
+    .nav__list-item{
+        margin-bottom: 3vh;
+        font-size: 4vh;
     }
 
+    .siteLogo{
+        width: 20%;
+    }
+
+    .siteLogo img{
+        height: 12vh;
+    }
+
+    .countdown-container {
+
+        margin-bottom: 2em;
+    }
+
+
     #headline {
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
-        color: white;
-        font-size: 8vh;
-        margin-bottom: 8vh;
-        letter-spacing: 1vh;
-        text-transform: uppercase;
+        font-size: 5vh;
+        margin-bottom: 5vh;
+        letter-spacing: 0.3vh;
     }
       
     #countdown ul li {
-        font-family: 'Poppins', sans-serif;
-        display: inline-block;
-        font-size: 4vh;
+        font-size: 1.2vh;
         list-style-type: none;
         margin-left: 3vw;
         margin-right: 3vw;
-        text-transform: uppercase;
-        color: white;
-        width: 16vw;
-        background-color: transparent;
-        text-align: center;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        width: 15vw;
     }
       
     #countdown ul li span {
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        display: block;
-        font-size: 14vh;
-        text-align: center;
+        font-size: 5vh;
     }
     
     .aboutUsSection{
-        position: absolute;
         display: flex;
         flex-direction: column;
-        top: 135vh;
-        left: 0;
         width: 100%;
-        height: 100vh;
+        z-index: 100;
+
     }
     
     .aboutUsTitle {
-        padding-top: 2vh;
+        padding-top: 1vh;
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
-        font-size: 9vh;
-        letter-spacing: 1vh;
+        font-size: 6vh;
+        letter-spacing: 0.5vh;
         font-weight: 800;
         font-family: 'Poppins', sans-serif;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
     
     .aboutUsTitleDescription {
+        font-size: 2.5em;
         text-align: center;
         color: white;
         font-family: 'Poppins', sans-serif;
         margin-top: 2vh;
         padding: 1vh;
-        font-size: 3.5vh;
     }
     
     .aboutUsModuleDescription {
+        font-size: 2.5em;
         text-align: center;
         color: white;
         font-family: 'Poppins', sans-serif;
         margin-top: 2vh;
         padding: 1vh;
-        font-size: 3.5vh;
+    }
+
+    .moduletext{
+        font-size: 1em;
+    }
+
+    .calltoAction{
+        flex-direction: column;
+
     }
     
-    .moduletext{
-        font-size: 4vh;
+    .calltoaction-link{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .calltoaction-btn{
+        width: 60%;
+        font-size: 1.5vh;
     }
 
 }

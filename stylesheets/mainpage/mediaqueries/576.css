@@ -2,51 +2,74 @@
 /* Small devices (landscape phones, less than 768px) */
 @media (min-width: 576px) and (max-width: 767.98px) {  
 
+    :root {
+        --v1: #be91c6;
+        --v2: #8a65cc;
+        --v3: #5e30d9;
+        --v4: #3b1895;
+        --v5: #361785;
+        --v6: #2e1470;
+        --v7: #27115e;
+        --v8: #1e0d49;
+        --v9: #180b3b;
+        --s1: #fea798;
+        --s2: #ff846e;
+        --cloud: #fea798;
+        --displace: -15em
+      }
+
+
     .mainTitle img{
-        width: 70%;
+        width: 80%;
     }
 
     .navbar-icon{
         display: none;
     }
 
-    .countdown-container {
-        top: 70vh;
+    .nav__list-item{
+        margin-bottom: 3vh;
+        font-size: 4vh;
     }
 
-    .underwater {
-        height: 120vh;
+    .siteLogo{
+        width: 20%;
     }
 
     .siteLogo img{
-        height: 15vh;
+        height: 12vh;
     }
+
+    .countdown-container {
+
+        margin-bottom: 2em;
+    }
+
 
     #headline {
         font-size: 5vh;
-        margin-bottom: 3vh;
-        letter-spacing: 1vh;
+        margin-bottom: 5vh;
+        letter-spacing: 0.3vh;
     }
       
     #countdown ul li {
-        font-size: 2vh;
+        font-size: 1.2vh;
+        list-style-type: none;
         margin-left: 3vw;
         margin-right: 3vw;
         width: 15vw;
     }
       
     #countdown ul li span {
-        font-size: 7vh;
+        font-size: 5vh;
     }
     
     .aboutUsSection{
-        position: absolute;
         display: flex;
         flex-direction: column;
-        top: 100vh;
-        left: 0;
         width: 100%;
-        height: 100vh;
+        z-index: 100;
+        transform: translateY(-14em);
     }
     
     .aboutUsTitle {
@@ -55,7 +78,7 @@
         justify-content: center;
         align-items: center;
         color: white;
-        font-size: 8vh;
+        font-size: 6vh;
         letter-spacing: 0.5vh;
         font-weight: 800;
         font-family: 'Poppins', sans-serif;
@@ -77,24 +100,25 @@
         margin-top: 2vh;
         padding: 1vh;
     }
-    
+
     .moduletext{
         font-size: 3vh;
     }
 
     .calltoAction{
-        top: 195vh;
         flex-direction: column;
+
     }
     
     .calltoaction-link{
         width: 100%;
-        margin-bottom: 3vh;
+        margin-bottom: 1em;
     }
 
     .calltoaction-btn{
-        width: 55%;
-        font-size: 1.8vh;
+        width: 60%;
+        font-size: 1.5vh;
     }
+
 
 }

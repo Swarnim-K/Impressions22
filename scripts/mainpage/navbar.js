@@ -3,7 +3,7 @@ const sitelogo = document.querySelector(".siteLogo")
 const countdownCtn = document.querySelector(".countdown-container")
 
 window.addEventListener("scroll", () => {
-    if (innerWidth >= 768) {
+    if (innerWidth >= 1200) {
         if (window.scrollY > countdownCtn.offsetTop) {
             sitelogo.classList.add("glassmorphic")
             navbar.classList.add("glassmorphic")
