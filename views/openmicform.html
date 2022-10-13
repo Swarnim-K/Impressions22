@@ -137,14 +137,14 @@
                 </div>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"> <img src="../images/preEvents/2021-12-12 (1).jpg" /> </div>
-                        <div class="swiper-slide"> <img src="../images/preEvents/2021-12-12.jpg" /> </div>
-                        <div class="swiper-slide"> <img src="../images/preEvents/2022-09-22.jpg" /> </div>
-                        <div class="swiper-slide"> <img src="../images/preEvents/2021-12-12 (1).jpg" /> </div>
-                        <div class="swiper-slide"> <img src="../images/preEvents/2021-12-12 (1).jpg" /> </div>
-                        <div class="swiper-slide"> <img src="../images/preEvents/2021-12-12 (1).jpg" /> </div>
-                        <div class="swiper-slide"> <img src="../images/preEvents/2021-12-12 (1).jpg" /> </div>
-                        <div class="swiper-slide"> <img src="../images/preEvents/2021-12-12 (1).jpg" /> </div>
+                        <div class="swiper-slide"> <img alt="" src="../images/preEvents/2021-12-12 (1).jpg" /> </div>
+                        <div class="swiper-slide"> <img alt="" src="../images/preEvents/2021-12-12.jpg" /> </div>
+                        <div class="swiper-slide"> <img alt="" src="../images/preEvents/2022-09-22.jpg" /> </div>
+                        <div class="swiper-slide"> <img alt="" src="../images/preEvents/2021-12-12 (1).jpg" /> </div>
+                        <div class="swiper-slide"> <img alt="" src="../images/preEvents/2021-12-12 (1).jpg" /> </div>
+                        <div class="swiper-slide"> <img alt="" src="../images/preEvents/2021-12-12 (1).jpg" /> </div>
+                        <div class="swiper-slide"> <img alt="" src="../images/preEvents/2021-12-12 (1).jpg" /> </div>
+                        <div class="swiper-slide"> <img alt="" src="../images/preEvents/2021-12-12 (1).jpg" /> </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -155,7 +155,7 @@
                     Location
                 </div>
                 <div class="location-map">
-                    <iframe
+                    <iframe title="Re-and-Ra-Cafe"
                         src="https://www.google.com/maps/d/embed?mid=1aB6r68KivXKpZR2qqFR7bvq11oPRuSk&ehbc=2E312F"></iframe>
                 </div>
             </div>
@@ -180,7 +180,8 @@
         form.addEventListener("submit", e => {
             e.preventDefault()
             fetch(scriptURL, { method: "POST", body: new FormData(form) })
-                .then(response => alert("Thanks for contacting us"))
+                .then(response => alert("Your response has been submitted"))
+                .then(window.location.replace("../index.html"))
                 .catch(error => console.error("Error!", error.message))
         })
     </script>
