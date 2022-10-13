@@ -1,6 +1,23 @@
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     
+    :root {
+        --v1: #be91c6;
+        --v2: #8a65cc;
+        --v3: #5e30d9;
+        --v4: #3b1895;
+        --v5: #361785;
+        --v6: #2e1470;
+        --v7: #27115e;
+        --v8: #1e0d49;
+        --v9: #180b3b;
+        --s1: #fea798;
+        --s2: #ff846e;
+        --cloud: #fea798;
+        --displace: -12em
+      }
+
+
     .mainTitle img{
         width: 80%;
     }
@@ -27,8 +44,10 @@
     }
 
     .countdown-container {
-        top: 70vh;
+        transform: translateY(var(--displace));
+        margin-bottom: 2em;
     }
+
 
     #headline {
         font-size: 5vh;
@@ -49,13 +68,11 @@
     }
     
     .aboutUsSection{
-        position: absolute;
         display: flex;
         flex-direction: column;
-        top: 100vh;
-        left: 0;
         width: 100%;
-        height: 100vh;
+        z-index: 100;
+        transform: translateY(var(--displace));
     }
     
     .aboutUsTitle {
@@ -92,13 +109,13 @@
     }
 
     .calltoAction{
-        top: 215vh;
         flex-direction: column;
+        transform: translateY(var(--displace));
     }
     
     .calltoaction-link{
         width: 100%;
-        margin-bottom: 3vh;
+        margin-bottom: 1em;
     }
 
     .calltoaction-btn{

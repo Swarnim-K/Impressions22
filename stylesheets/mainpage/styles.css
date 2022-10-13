@@ -11,29 +11,24 @@
     --s1: #fea798;
     --s2: #ff846e;
     --cloud: #fea798;
+    --displace: -6em
   }
 
-.underwater {
-    background: linear-gradient(
-        var(--v2), 
-        var(--v3), 
-        var(--v4), 
-        var(--v5), 
-        var(--v6), 
-        var(--v7), 
-        var(--v8), 
-        var(--v9)
-        );
+.landscape{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 160vh;
+    height: 100vh;
 }
+
 
 .navbar{
     position: fixed;
     top: 0;
     right: 0;
     z-index: 500;
-    width: 90%;
+    width: 95%;
     height: 8vh;
     display: flex;
     align-items: center;
@@ -74,7 +69,8 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    width: 10%;
+    width: 5%;
+    border-bottom-right-radius: 1em;
 }
 
 .siteLogo img{
@@ -93,15 +89,33 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.main-body-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(
+        var(--cloud),
+        var(--cloud),
+        var(--cloud),
+        var(--cloud),
+        var(--v2), 
+        var(--v3), 
+        var(--v4), 
+        var(--v5), 
+        var(--v6), 
+        var(--v7), 
+        var(--v8), 
+        var(--v9)
+        );
+}
+
 .titleBlock {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     width: 100%;
     height: 100vh;
-    top: 0;
-    left: 0;
     z-index: 100;
     overflow-x: hidden;
 }
@@ -111,16 +125,16 @@
 }
 
 .countdown-container {
-    position: absolute;
+    position: relative;
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 80vh;
     margin: 0 auto;
     text-align: center;
     z-index: 100;
+    transform: translateY(var(--displace));
 }
   
 #headline {
@@ -157,12 +171,10 @@
 }
 
 .calltoAction{
-    position: absolute;
     display: flex;
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    top: 260vh;
 }
 
 .calltoaction-link{
@@ -170,6 +182,8 @@
     justify-content: center;
     width: 50%;
     text-decoration: none;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .calltoaction-btn {
