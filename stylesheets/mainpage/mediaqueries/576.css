@@ -103,22 +103,6 @@
 
     .moduletext{
         font-size: 3vh;
-    }
-
-    .calltoAction{
-        flex-direction: column;
-
-    }
-    
-    .calltoaction-link{
-        width: 100%;
-        margin-bottom: 1em;
-    }
-
-    .calltoaction-btn{
-        width: 60%;
-        font-size: 1.5vh;
-    }
-
+    } 
 
 }
