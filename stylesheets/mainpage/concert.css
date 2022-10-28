@@ -1,0 +1,85 @@
+.concert-container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background: #1f2c2c;
+    height: 110vh;
+    width: 100%;
+}
+
+.parallax {
+    position: absolute;
+}
+
+#scene {
+    z-index: 100;
+}
+
+#crowd-third {
+  z-index: 200;
+  animation: shuffle3;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+
+#crowd-second {
+  z-index: 300;
+  animation: shuffle2;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+#crowd-first {
+  z-index: 400;
+  animation: shuffle1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shuffle1 {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-100px);
+    }
+    75%{
+        transform: translateX(100px);
+    }
+}
+
+@keyframes shuffle2 {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-100px);
+    }
+    75%{
+        transform: translateX(100px);
+    }
+}
+
+@keyframes shuffle3 {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-100px);
+    }
+    75%{
+        transform: translateX(100px);
+    }
+}
+
+@keyframes shuffle4 {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-100px);
+    }
+    75%{
+        transform: translateX(100px);
+    }
+}

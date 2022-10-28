@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./stylesheets/mainpage/styles.css">
     <link rel="stylesheet" href="./stylesheets/mainpage/navbar.css">
     <link rel="stylesheet" href="./stylesheets/mainpage/waves.css">
+    <link rel="stylesheet" href="./stylesheets/mainpage/concert.css">
     <link rel="stylesheet" href="./stylesheets/mainpage/mediaqueries/mobiles.css">
     <link rel="stylesheet" href="./stylesheets/mainpage/mediaqueries/576.css">
     <link rel="stylesheet" href="./stylesheets/mainpage/mediaqueries/768.css">
@@ -25,7 +26,23 @@
 
 <body>
 
-    <div id="holder"></div>
+    <!-- <div id="holder"></div> -->
+
+    <div class="concert-container">
+        <div id="scene" class='parallax' data-speed="-4">
+            <img src="https://ydmitry.ru/upload/blog/crowd/scene.png">
+        </div>
+        <div id="crowd-first" class='parallax'>
+            <img src="https://ydmitry.ru/upload/blog/crowd/crowd-first.png">
+        </div>
+        <div id="crowd-second" class='parallax' data-speed="-2">
+            <img src="https://ydmitry.ru/upload/blog/crowd/crowd-second.png">
+        </div>
+        <div id="crowd-third" class='parallax' data-speed="-3">
+            <img src="https://ydmitry.ru/upload/blog/crowd/crowd-third.png">
+        </div>
+    </div>
+
     <div class="nav">
         <div class="nav__content">
             <ul class="nav__list">
@@ -181,6 +198,7 @@
     <script src="./scripts/mainpage/hamburger.js"></script>
     <script src="./scripts/mainpage/navbar.js"></script>
     <script src="./scripts/mainpage/waves.js"></script>
+    <!-- <script src="./scripts/mainpage/concert.js"></script> -->
 </body>
 
 </html>
