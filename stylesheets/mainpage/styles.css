@@ -121,7 +121,7 @@
     align-items: center;
     margin: 0 auto;
     text-align: center;
-    z-index: 500;
+    z-index: 300;
     transform: translateY(var(--displace));
 }
   
@@ -158,93 +158,8 @@
     text-align: center;
 }
 
-.calltoAction{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.calltoaction-link{
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    text-decoration: none;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
-.calltoaction-btn {
-    height: 7vh;
-    color: #fff;
-    padding: 10px 25px;
-    font-size: 2.5vh;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
-    z-index: 100;
-    text-align: center;
-}
-
-.calltoaction-innerbtn {
-    border: none;
-    background-color: var(--s2);
-    color: #fff;
-    overflow: hidden;
-}
-
-.calltoaction-innerbtn:hover {
-    text-decoration: none;
-    color: #fff;
-}
-
-.calltoaction-innerbtn:before {
-    position: absolute;
-    content: '';
-    display: inline-block;
-    top: -180px;
-    left: 0;
-    width: 30px;
-    height: 100%;
-    background-color: #fff;
-    animation: shiny-btn 3s ease-in-out infinite;
-}
-
-.calltoaction-innerbtn:hover{
-    opacity: .7;
-}
-
-.calltoaction-innerbtn:active{
-    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
-                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-                inset -4px -4px 6px 0 rgba(255,255,255,.2),
-                inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
-}
-
-#preevents-btn{
-    background-color: var(--v3);
-}
-
-
-@keyframes shiny-btn {
-    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
-    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
-    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
-    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
-}
-
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-body {
-  background-color: rgba(0, 181, 245, 0.05);
-}
+
 
 .social-container {
     position: relative;
@@ -258,12 +173,14 @@ body {
   list-style: none;
   margin: 1em;
 }
+
 .social-icons li {
   display: inline-block;
   margin: 0.15em;
   position: relative;
   font-size: 1.2em;
 }
+
 .social-icons i {
   color: #fff;
   position: absolute;
@@ -271,9 +188,11 @@ body {
   left: 21px;
   transition: all 265ms ease-out;
 }
+
 .social-icons a {
   display: inline-block;
 }
+
 .social-icons a:before {
   transform: scale(1);
   -ms-transform: scale(1);
@@ -286,10 +205,12 @@ body {
   background: linear-gradient(45deg, #00B5F5, #002A8F);
   transition: all 265ms ease-out;
 }
+
 .social-icons a:hover:before {
   transform: scale(0);
   transition: all 265ms ease-in;
 }
+
 .social-icons a:hover i {
   transform: scale(2.2);
   -ms-transform: scale(2.2);

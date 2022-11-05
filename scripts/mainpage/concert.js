@@ -13,7 +13,7 @@ $(document).ready(function () {
     $('.concert-container').mousemove(function (e) {
 
         x_center = (elem_width / 2) - (e.pageX - elem_left);
-        y_center = (elem_height / 2) - (e.pageY - elem_top);
+        y_center = 0;
 
         $('.parallax').each(function () {
 

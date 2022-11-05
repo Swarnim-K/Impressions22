@@ -13,16 +13,21 @@
 
 #scene {
     z-index: 100;
+    position: fixed;
 }
 
 #crowd-third {
-  z-index: 200;
+    z-index: 200;
+    position: fixed;
 }
 
 #crowd-second {
-  z-index: 300;
+    z-index: 300;
+    position: fixed;
 }
 
 #crowd-first {
-  z-index: 400;
+    z-index: 400;
+    position: fixed;
+    bottom: -1vh;
 }
