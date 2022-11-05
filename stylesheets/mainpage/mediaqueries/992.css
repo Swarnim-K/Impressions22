@@ -1,19 +1,7 @@
 @media (min-width: 992px) and (max-width: 1199.98px) { 
 
     :root {
-        --v1: #be91c6;
-        --v2: #8a65cc;
-        --v3: #5e30d9;
-        --v4: #3b1895;
-        --v5: #361785;
-        --v6: #2e1470;
-        --v7: #27115e;
-        --v8: #1e0d49;
-        --v9: #180b3b;
-        --s1: #fea798;
-        --s2: #ff846e;
-        --cloud: #fea798;
-        --displace: -18.5em
+        --displace: -5em
       }
 
 
@@ -31,7 +19,10 @@
     }
 
     .siteLogo{
-        width: 20%;
+        width: 10%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
     }
 
     .siteLogo img{
@@ -39,8 +30,11 @@
     }
 
     .countdown-container {
-
         margin-bottom: 2em;
+    }
+
+    .navbar{
+        width: 90%;
     }
 
 
@@ -67,7 +61,6 @@
         flex-direction: column;
         width: 100%;
         z-index: 100;
-
     }
     
     .aboutUsTitle {
@@ -84,7 +77,6 @@
     }
     
     .aboutUsTitleDescription {
-        font-size: 2.5em;
         text-align: center;
         color: white;
         font-family: 'Poppins', sans-serif;
@@ -93,7 +85,6 @@
     }
     
     .aboutUsModuleDescription {
-        font-size: 2.5em;
         text-align: center;
         color: white;
         font-family: 'Poppins', sans-serif;
@@ -102,22 +93,7 @@
     }
 
     .moduletext{
-        font-size: 1em;
-    }
-
-    .calltoAction{
-        flex-direction: column;
-
-    }
-    
-    .calltoaction-link{
-        width: 100%;
-        margin-bottom: 1em;
-    }
-
-    .calltoaction-btn{
-        width: 60%;
-        font-size: 1.5vh;
-    }
+        font-size: 3vh;
+    } 
 
 }

@@ -1,5 +1,12 @@
-@media (min-width: 1400px) {  
+@media (min-width: 1400px) { 
     
+    .siteLogo{
+        width: 10%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
     .siteLogo img{
         height: 15vh;
     }
@@ -11,6 +18,10 @@
     .mainTitle img{
         width: 70%;
         transform: translateY(-5vh);
+    }
+
+    .navbar{
+        width: 90%;
     }
 
     #headline {
@@ -49,7 +60,7 @@
     .aboutUsSection{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 80%;
         z-index: 300;
     }
     

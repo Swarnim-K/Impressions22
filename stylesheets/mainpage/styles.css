@@ -1,28 +1,6 @@
 :root {
-    --v1: #be91c6;
-    --v2: #8a65cc;
-    --v3: #5e30d9;
-    --v4: #3b1895;
-    --v5: #361785;
-    --v6: #2e1470;
-    --v7: #27115e;
-    --v8: #1e0d49;
-    --v9: #180b3b;
-    --s1: #fea798;
-    --s2: #ff846e;
-    --cloud: #fea798;
     --displace: -6em
   }
-
-
-.landscape{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-}
-
 
 .navbar{
     position: fixed;
@@ -37,12 +15,13 @@
 }
 
 .glassmorphic{
-    background: rgba(255, 255, 255, 0.32);
+    background: rgba(12, 12, 12, 0.32);
     backdrop-filter: blur(8.1px);
     -webkit-backdrop-filter: blur(8.1px);
     animation-duration: 300ms;
     animation-name: fadein;
 }
+
 
 @keyframes fadein {
     10%{
@@ -71,7 +50,7 @@
     left: 0;
     z-index: 1000;
     width: 5%;
-    border-bottom-right-radius: 1em;
+    border-radius: 1em;
 }
 
 .siteLogo img{
@@ -93,6 +72,7 @@
 .main-body-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     background: #1f2c2c;
 }
@@ -147,6 +127,7 @@
     width: 12vw;
     background-color: transparent;
     text-align: center;
+    background: #1f2c2c6d;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
   
@@ -156,6 +137,10 @@
     display: block;
     font-size: 14vh;
     text-align: center;
+}
+
+.aboutUsSection{
+    background: #1f2c2c86;
 }
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
