@@ -36,7 +36,7 @@
 }
 
 .slider .box .details {
-    padding:  30px 130px;
+    padding: 30px 130px;
     padding-right: 0;
     z-index: 100;
     grid-column: 1 / span 1;
@@ -279,7 +279,7 @@
     }
 
     .slider .box .details {
-        padding:  10px 130px;
+        padding: 10px 130px;
         height: 65%;
         margin-top: 8%;
         margin-bottom: 1%;
@@ -374,7 +374,7 @@
         top: 0px;
     }
 
-    .slider .illustration div{
+    .slider .illustration div {
         height: 12rem;
     }
 
@@ -416,6 +416,10 @@
 }
 
 /* scrollbar */
+.slider .box .details {
+    scrollbar-color: white rgb(112, 112, 112);
+    scrollbar-width: thin;
+}
 
 .slider .box .details::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -432,20 +436,35 @@
     border: 1px solid white;
 }
 
+/* .slider .box .details::-moz-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: rgb(112, 112, 112);
+}
+
+.slider .box .details::-moz-scrollbar {
+    width: 3px;
+    background-color: black;
+}
+
+.slider .box .details::-moz-scrollbar-thumb {
+    background-color: white;
+    border: 1px solid white;
+} */
+
 /* tags used in js */
-.slider .details h2{
+.slider .details h2 {
     font-size: 28px;
     font-family: 'ADAM';
     margin-bottom: 12px;
 }
 
-.slider #EveContact{
+.slider #EveContact {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.slider .details h3{
+.slider .details h3 {
     width: max-content;
     font-size: 24px;
     font-family: 'ADAM';
@@ -454,24 +473,24 @@
     border-bottom: 2px solid rgb(136, 135, 135);
 }
 
-.slider .details h4{
+.slider .details h4 {
     width: max-content;
     font-size: 20px;
     border-bottom: 2px solid rgb(136, 135, 135);
     margin-bottom: 5px;
 }
 
-.slider .details h5{
+.slider .details h5 {
     width: max-content;
     font-size: 18px;
 }
 
-.slider .details li{
+.slider .details li {
     font-size: 18px;
     margin-bottom: 8px;
 }
 
-.slider .details ul{
+.slider .details ul {
     font-size: 20px;
     margin-bottom: 15px;
     padding-right: 8px;
