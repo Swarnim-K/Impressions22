@@ -33,6 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: end;
+    padding-right: 2vw;
 }
 
 .glassmorphic{
@@ -178,19 +179,23 @@
     align-items: center;
 }
 
-.calltoaction-link{
+/* .calltoaction-link{
     display: flex;
     justify-content: center;
-    width: 50%;
+    align-items: center;
+    width: 100%;
     text-decoration: none;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
+    margin: 2em;
+} */
 
 .calltoaction-btn {
-    height: 7vh;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
-    padding: 10px 25px;
+    /* padding: 10px 25px; */
+    padding: 1vh 3vh;
     font-size: 2.5vh;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -312,4 +317,16 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
+}
+
+@media (orientation: landscape) {
+    .titleBlock {
+        height: 100vh;
+    }
+    .aboutUsSection{
+        transform: translateY(6em);
+    }
+    .countdown-container {
+        display: none;
+    }
 }

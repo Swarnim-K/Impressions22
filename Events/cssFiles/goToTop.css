@@ -1,0 +1,27 @@
+.top {
+    position: fixed;
+    z-index: 100;
+    right: 1%;
+    bottom: 4%;
+    background: url(../images/Page4.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    opacity: 0.8;
+    padding: 15px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.arrowTop{
+    width: 18px;
+    height: 15px;
+}
+
+#scrollbtn.active{
+    visibility: hidden;
+}

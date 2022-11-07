@@ -22,13 +22,8 @@
         width: 80%;
     }
 
-    .navbar-icon{
+    .menu-icon {
         display: none;
-    }
-
-    .nav__list-item{
-        margin-bottom: 3vh;
-        font-size: 4vh;
     }
 
     .siteLogo{
@@ -40,7 +35,6 @@
     }
 
     .countdown-container {
-
         margin-bottom: 2em;
     }
 
@@ -106,6 +100,12 @@
 
     .social-container {
         transform: translateY(-20vh);
+    }
+
+    .calltoaction-btn {
+        height: 5vh;
+        padding: 1vh 3vh;
+        font-size: 2vh;
     }
 
 }

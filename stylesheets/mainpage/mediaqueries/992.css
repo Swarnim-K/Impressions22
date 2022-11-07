@@ -21,13 +21,8 @@
         width: 80%;
     }
 
-    .navbar-icon{
+    .menu-icon {
         display: none;
-    }
-
-    .nav__list-item{
-        margin-bottom: 3vh;
-        font-size: 4vh;
     }
 
     .siteLogo{
@@ -39,8 +34,9 @@
     }
 
     .countdown-container {
-
+        position: relative;
         margin-bottom: 2em;
+        transform: translateY(0);
     }
 
 
@@ -103,21 +99,6 @@
 
     .moduletext{
         font-size: 1em;
-    }
-
-    .calltoAction{
-        flex-direction: column;
-
-    }
-    
-    .calltoaction-link{
-        width: 100%;
-        margin-bottom: 1em;
-    }
-
-    .calltoaction-btn{
-        width: 60%;
-        font-size: 1.5vh;
     }
 
 }
