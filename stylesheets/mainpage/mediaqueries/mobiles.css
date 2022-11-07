@@ -27,7 +27,7 @@
     }
 
     .siteLogo{
-        width: 20%;
+        width: 30%;
     }
 
     .siteLogo img{
@@ -35,7 +35,8 @@
     }
 
     .countdown-container {
-        margin-bottom: 2em;
+        position: absolute;
+        bottom: 2vh;
     }
 
 
@@ -62,7 +63,6 @@
         flex-direction: column;
         width: 100%;
         z-index: 100;
-        transform: translateY(-12em);
     }
     
     .aboutUsTitle {
@@ -98,14 +98,10 @@
         font-size: 3vh;
     }
 
-    .social-container {
-        transform: translateY(-20vh);
-    }
-
     .calltoaction-btn {
         height: 5vh;
         padding: 1vh 3vh;
-        font-size: 2vh;
+        font-size: 1.5vh;
     }
 
 }

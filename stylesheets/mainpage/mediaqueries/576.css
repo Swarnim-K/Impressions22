@@ -36,8 +36,8 @@
     }
 
     .countdown-container {
-        margin-bottom: 2em;
-        transform: translateY(var(--displace));
+        position: absolute;
+        bottom: 2vh;
     }
 
 
@@ -64,7 +64,6 @@
         flex-direction: column;
         width: 100%;
         z-index: 100;
-        transform: translateY(-14em);
     }
     
     .aboutUsTitle {

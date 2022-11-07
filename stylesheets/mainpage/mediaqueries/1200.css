@@ -14,6 +14,7 @@
     }
 
     #headline {
+        width: 100%;
         text-align: center;
         font-family: 'Poppins', sans-serif;
         color: white;
@@ -21,6 +22,7 @@
         margin-bottom: 8vh;
         letter-spacing: 1vh;
         text-transform: uppercase;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
       
     #countdown ul li {
@@ -28,8 +30,10 @@
         display: inline-block;
         font-size: 4vh;
         list-style-type: none;
+        padding-top: 3vh;
         margin-left: 3vw;
         margin-right: 3vw;
+        margin-bottom: 3vw;
         text-transform: uppercase;
         color: white;
         width: 12vw;
@@ -51,6 +55,7 @@
         flex-direction: column;
         width: 100%;
         z-index: 100;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
     
     .aboutUsTitle {
@@ -63,7 +68,6 @@
         letter-spacing: 1vh;
         font-weight: 800;
         font-family: 'Poppins', sans-serif;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
     
     .aboutUsTitleDescription {
