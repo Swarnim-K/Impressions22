@@ -14,6 +14,30 @@
     --displace: -6em
   }
 
+  @font-face {
+    font-family: OldLondon;
+    src: url(../../fonts/OldLondon.ttf);
+}
+
+.headerText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    z-index: 600;
+    text-align: center;
+    color: white;
+}
+
+.headerText h2 {
+    font-family: OldLondon;
+    letter-spacing: 0.3vh;
+    font-size: 200;
+}
 
 .navbar{
     position: fixed;
@@ -26,6 +50,9 @@
     align-items: center;
     justify-content: end;
     padding-right: 2vw;
+    background: rgba(0, 0, 0, 0.32);
+    backdrop-filter: blur(8.1px);
+    -webkit-backdrop-filter: blur(8.1px);
 }
 
 .siteLogo{
@@ -38,6 +65,9 @@
     z-index: 1000;
     width: 10%;
     border-bottom-right-radius: 1em;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8.1px);
+    -webkit-backdrop-filter: blur(8.1px);
 }
 
 .siteLogo img{
@@ -62,17 +92,22 @@
     font-weight: 600;
     font-size: 3.5vh;
     font-family: 'Poppins', sans-serif;
+    z-index: inherit;
 }
 
 .main-body-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     background-color: black;
+    overflow: hidden;
 }
 
 .titleBlock {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,18 +117,47 @@
 }
 
 #titleBlockBg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     object-fit: cover;
     object-position: center;
     width: 100%;
     height: 100vh;
+    z-index: 100;
+}
+
+.placeholdertitleBlock{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+
+#aboutUsSectionBg {
+    position: absolute;
+    top: 100vh;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 130vh;
+    z-index: 200;
 }
 
 .mainTitle{
     display: flex;
     justify-content: center;
+}
+
+.aboutUsSection{
+    z-index: 300;
+    width: 75%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8.1px);
+    -webkit-backdrop-filter: blur(8.1px);
 }
 
 .countdown-container {

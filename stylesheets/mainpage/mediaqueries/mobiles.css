@@ -19,19 +19,37 @@
 
 
     .mainTitle img{
-        width: 80%;
+        width: 100%;
     }
 
     .menu-icon {
         display: none;
     }
 
+    .headerText{
+        position: fixed;
+        top: 35%;
+        z-index: 200;
+    }
+    
+    .headerText h2 {
+        font-size: 2vh;
+    }
+
+    .navbar{
+        height: 5vh;
+    }
+
+    .navbar-icon a{
+        font-size: 2vh;
+    }
+
     .siteLogo{
-        width: 30%;
+        width: 25%;
     }
 
     .siteLogo img{
-        height: 12vh;
+        height: 8vh;
     }
 
     .countdown-container {
@@ -59,10 +77,12 @@
     }
     
     .aboutUsSection{
+        margin-top: 3vh;
+        border-radius: 0.5em;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        z-index: 100;
+        width: 90%;
+        z-index: 400;
     }
     
     .aboutUsTitle {
@@ -75,7 +95,6 @@
         letter-spacing: 0.5vh;
         font-weight: 800;
         font-family: 'Poppins', sans-serif;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
     
     .aboutUsTitleDescription {

@@ -51,10 +51,10 @@
     }
 
     .aboutUsSection{
+        margin-top: 3vh;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        z-index: 100;
+        border-radius: 2em;
     }
     
     .aboutUsTitle {
@@ -67,7 +67,7 @@
         letter-spacing: 1vh;
         font-weight: 800;
         font-family: 'Poppins', sans-serif;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
     }
     
     .aboutUsTitleDescription {
