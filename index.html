@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./stylesheets/mainpage/mediaqueries/992.css">
     <link rel="stylesheet" href="./stylesheets/mainpage/mediaqueries/1200.css">
     <link rel="stylesheet" href="./stylesheets/mainpage/mediaqueries/1400.css">
+    <link rel="stylesheet" href="./stylesheets/mainpage/visualizer.css">
     <link rel="stylesheet" href="./images/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,16 +51,27 @@
 
     <div class="main-body-container">
 
+        <div id='loading'>
+            <p>Loading&hellip;</p>
+            <p class='msg'>- Initializing -</p>
+        </div>
+
+        <div id='no-audio'>
+            <h1>No Web Audio API</h1>
+            <p>Sorry, this experiment requires the Web Audio API.</p>
+            <a href='http://caniuse.com/#feat=audio-api' target='_blank'>See browser support</a>
+        </div>
+
         <!-- <video autoplay muted loop id="titleBlockBg">
             <source
                 src="https://res.cloudinary.com/wizeric/video/upload/v1668081283/Impressions/pexels-mart-production-7565982_rfir0t.mp4"
                 type="video/mp4">
         </video> -->
 
-        <video autoplay muted loop id="titleBlockBg">
+        <!-- <video autoplay muted loop id="titleBlockBg">
             <source src="https://res.cloudinary.com/wizeric/video/upload/v1668520200/Impressions/7btrrd_drswfc.mp4"
                 type="video/mp4">
-        </video>
+        </video> -->
 
         <div class="titleBlock">
             <div class="mainTitle">
@@ -173,6 +185,7 @@
     <script src="./scripts/mainpage/timeline.js"></script>
     <!-- <script src="./scripts/mainpage/hamburger.js"></script> -->
     <!-- <script src="./scripts/mainpage/navbar.js"></script> -->
+    <script src="./scripts/mainpage/visualizer.js"></script>
 </body>
 
 </html>
