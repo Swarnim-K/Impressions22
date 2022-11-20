@@ -18,14 +18,18 @@
       }
 
 
+<<<<<<< HEAD
     .mainTitle img{
         width: 80%;
     }
 
+=======
+>>>>>>> liquid
     .menu-icon {
         display: none;
     }
 
+<<<<<<< HEAD
     .siteLogo{
         width: 30%;
         border-top-left-radius: 0;
@@ -39,6 +43,23 @@
 
     .navbar{
         width: 70%;
+=======
+    .navbar{
+        height: 5vh;
+        width: 70%;
+    }
+
+    .navbar-icon a{
+        font-size: 2vh;
+    }
+
+    .siteLogo{
+        width: 30%;
+    }
+
+    .siteLogo img{
+        height: 10vh;
+>>>>>>> liquid
     }
 
     .navbar-icon a{
@@ -56,67 +77,59 @@
         position: fixed;
     }
 
-    #headline {
-        font-size: 5vh;
-        margin-bottom: 5vh;
-        letter-spacing: 0.3vh;
-    }
-      
-    #countdown ul li {
-        font-size: 1.2vh;
-        list-style-type: none;
-        margin-left: 3vw;
-        margin-right: 3vw;
-        width: 15vw;
-    }
-      
-    #countdown ul li span {
-        font-size: 5vh;
+
+    #titleImage{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        z-index: 1;
     }
     
     .aboutUsSection{
+<<<<<<< HEAD
         display: flex;
         flex-direction: column;
         width: 100%;
         z-index: 200;
         transform: translateY(-12em);
+=======
+        width: 90%;
+>>>>>>> liquid
     }
-    
+
     .aboutUsTitle {
-        padding-top: 1vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
         font-size: 6vh;
-        letter-spacing: 0.5vh;
+        letter-spacing: 1vh;
         font-weight: 800;
-        font-family: 'Poppins', sans-serif;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
     }
     
     .aboutUsTitleDescription {
-        text-align: center;
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        margin-top: 2vh;
-        padding: 1vh;
+        width: 90%;
+        font-size: 2vh;
     }
     
     .aboutUsModuleDescription {
-        text-align: center;
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        margin-top: 2vh;
         padding: 1vh;
+        width: 90%;
+        font-size: 2vh;
     }
-
+    
     .moduletext{
-        font-size: 3vh;
+        font-size: 2.5vh;
     }
-
-    .social-container {
-        transform: translateY(-20vh);
+      
+    .social-icons i {
+      top: 21px;
+      left: 21px;
+      transform: translateY(-50%) translateX(-50%);
+    }
+    
+    .social-icons a:before {
+      width: 42px;
+      height: 42px;
     }
 
 }

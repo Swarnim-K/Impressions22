@@ -1,75 +1,51 @@
 @media (min-width: 992px) and (max-width: 1199.98px) { 
 
-    :root {
-        --displace: -5em
+    #loading {
+        top: 80%;
       }
 
-
-    .mainTitle img{
-        width: 80%;
-    }
-
-    .navbar-icon{
+    .menu-icon {
         display: none;
     }
 
-    .nav__list-item{
-        margin-bottom: 3vh;
-        font-size: 4vh;
+    .navbar{
+        height: 7vh;
+        width: 85%;
+    }
+
+    .navbar-icon a{
+        font-size: 3vh;
     }
 
     .siteLogo{
-        width: 10%;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 0;
+        width: 15%;
     }
 
     .siteLogo img{
-        height: 12vh;
+        height: 13vh;
     }
 
-    .countdown-container {
-        margin-bottom: 2em;
-    }
-
-    .navbar{
-        width: 90%;
-    }
-
-
-    #headline {
-        font-size: 5vh;
-        margin-bottom: 5vh;
-        letter-spacing: 0.3vh;
-    }
-      
-    #countdown ul li {
-        font-size: 1.2vh;
-        list-style-type: none;
-        margin-left: 3vw;
-        margin-right: 3vw;
-        width: 15vw;
-    }
-      
-    #countdown ul li span {
-        font-size: 5vh;
+    #titleImage{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        z-index: 1;
     }
     
     .aboutUsSection{
         display: flex;
         flex-direction: column;
-        width: 100%;
-        z-index: 100;
+        width: 90%;
     }
     
     .aboutUsTitle {
-        padding-top: 1vh;
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
-        font-size: 6vh;
+        font-size: 8vh;
         letter-spacing: 0.5vh;
         font-weight: 800;
         font-family: 'Poppins', sans-serif;
@@ -77,23 +53,32 @@
     }
     
     .aboutUsTitleDescription {
+        font-size: 3.5vh;
         text-align: center;
         color: white;
         font-family: 'Poppins', sans-serif;
-        margin-top: 2vh;
-        padding: 1vh;
     }
     
     .aboutUsModuleDescription {
+        font-size: 3.5vh;
         text-align: center;
         color: white;
         font-family: 'Poppins', sans-serif;
-        margin-top: 2vh;
-        padding: 1vh;
     }
 
     .moduletext{
-        font-size: 3vh;
-    } 
+        font-size: 3.8vh;
+    }
+
+    .social-icons i {
+        top: 25px;
+        left: 25px;
+        transform: translateY(-50%) translateX(-50%);
+      }
+      
+      .social-icons a:before {
+        width: 50px;
+        height: 50px;
+      }
 
 }

@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="./stylesheets/mainpage/landscape.css">
     <link rel="stylesheet" href="./stylesheets/mainpage/styles.css">
     <link rel="stylesheet" href="./stylesheets/mainpage/navbar.css">
-    <link rel="stylesheet" href="./stylesheets/mainpage/waves.css">
-    <link rel="stylesheet" href="./stylesheets/mainpage/concert.css">
+    <link rel="stylesheet" href="./stylesheets/mainpage/visualizer.css">
     <link rel="stylesheet" href="./stylesheets/mainpage/mediaqueries/mobiles.css">
     <link rel="stylesheet" href="./stylesheets/mainpage/mediaqueries/576.css">
     <link rel="stylesheet" href="./stylesheets/mainpage/mediaqueries/768.css">
@@ -21,56 +20,23 @@
     <link rel="stylesheet" href="./images/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- <div id="holder"></div> -->
-
-    <div class="concert-container">
-        <div id="scene" class='parallax' data-speed="-4">
-            <!-- <img src="https://ydmitry.ru/upload/blog/crowd/scene.png"> -->
-            <img src="./images/mainpage/scene.png" alt="">
-        </div>
-        <div id="crowd-first" class='parallax'>
-            <!-- <img src="https://ydmitry.ru/upload/blog/crowd/crowd-first.png"> -->
-            <img src="./images/mainpage/crowd-first.png" alt="">
-        </div>
-        <div id="crowd-second" class='parallax' data-speed="-2">
-            <!-- <img src="https://ydmitry.ru/upload/blog/crowd/crowd-second.png"> -->
-            <img src="./images/mainpage/crowd-second.png" alt="">
-        </div>
-        <div id="crowd-third" class='parallax' data-speed="-3">
-            <!-- <img src="https://ydmitry.ru/upload/blog/crowd/crowd-third.png"> -->
-            <img src="./images/mainpage/crowd-third.png" alt="">
-        </div>
-    </div>
-
-    <div class="nav">
-        <div class="nav__content">
-            <ul class="nav__list">
-                <li class="nav__list-item">
-                    <a href="./Impressions-22-Events/index.html">
-                        Events
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
 
     <div class='cursor2' id="cursor2"></div>
     <div class='cursor3' id="cursor3"></div>
 
     <div class="siteLogo">
-        <a href="./index.html">
-            <img src="./images/coep and foot logo.png" alt="">
-        </a>
+        <img src="./images/coep and foot logo.png" alt="">
     </div>
 
     <div class="navbar">
         <div class="navbar-icon" id="events">
-            <a href="./Impressions-22-Events/index.html">
+            <a href="./Events/index.html">
                 Events
             </a>
         </div>
@@ -82,33 +48,38 @@
         <span class="menu-icon__line menu-icon__line-right"></span>
     </div>
 
+
     <div class="main-body-container">
 
-        <div class="titleBlock">
-            <div class="mainTitle">
-                <img src="./images/Impressions22Logo.png" alt="">
-            </div>
+        <div class="preloader">
+
         </div>
 
-        <div class="countdown-container">
-            <h1 id="headline">Coming Soon</h1>
-            <div id="countdown">
-                <ul>
-                    <li>
-                        <span id="days"></span>days
-                    </li>
-                    <li>
-                        <span id="hours"></span>Hours
-                    </li>
-                    <li>
-                        <span id="minutes"></span>Minutes
-                    </li>
-                    <li>
-                        <span id="seconds"></span>Seconds
-                    </li>
-                </ul>
-            </div>
+        <svg version="1.1" id="play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" height="100px" width="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100"
+            xml:space="preserve">
+            <path class="stroke-solid" fill="none" stroke="#ddbe72" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+       C97.3,23.7,75.7,2.3,49.9,2.5" />
+            <path class="icon" fill="#ddbe72"
+                d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z" />
+        </svg>
+
+        <div id='loading'>
+            <!-- <p>Loading&hellip;</p> -->
+            <p class='msg'>- Initializing -</p>
         </div>
+        <div id='no-audio'>
+            <h1>No Web Audio API</h1>
+            <p>Sorry, this experiment requires the Web Audio API.</p>
+            <a href='http://caniuse.com/#feat=audio-api' target='_blank'>See browser support</a>
+        </div>
+
+
+        <div class="titleBlock">
+
+        </div>
+        <img id="titleImage"
+            src="https://res.cloudinary.com/wizeric/image/upload/v1668081341/Impressions/name_logo_eia6at.png" alt="">
 
         <div class="aboutUsSection">
 
@@ -125,34 +96,39 @@
             <div class="aboutUsModuleDescription">
                 6 modules of Impressions <br>
                 <div class="moduletext">
-                    Art and Craft
+                    <a href="./Events/index.html#m3">
+                        Art and Craft
+                    </a>
                 </div>
                 <div class="moduletext">
-                    Drama
+                    <a href="./Events/index.html#m6">
+                        Shoutout
+                    </a>
                 </div>
                 <div class="moduletext">
-                    Shoutout
+                    <a href="./Events/index.html#m4">
+                        Camera
+                    </a>
                 </div>
                 <div class="moduletext">
-                    Camera
+                    <a href="./Events/index.html#m2">
+                        Drama
+                    </a>
                 </div>
                 <div class="moduletext">
-                    Dance
+                    <a href="./Events/index.html#m1">
+                        Dance
+                    </a>
                 </div>
                 <div class="moduletext">
-                    and
+                    <a href="./Events/index.html#m5">
+                        Music
+                    </a>
                 </div>
-                <div class="moduletext">
-                    Music
-                </div>
-                <br> <br>
                 24 enthralling events to give all the artists from India and abroad, <br>
                 an opportunity to connect with the best talents on the globe.
             </div>
 
-        </div>
-
-        <div class="social-container">
             <ul class="social-icons">
                 <li>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/impressionsCOEP/"><i
@@ -172,7 +148,6 @@
                 </li>
             </ul>
         </div>
-
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
@@ -183,11 +158,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./scripts/mainpage/countdown.js"></script>
+    <!-- <script src="./scripts/mainpage/countdown.js"></script> -->
     <script src="./scripts/mainpage/timeline.js"></script>
     <!-- <script src="./scripts/mainpage/hamburger.js"></script> -->
-    <script src="./scripts/mainpage/concert.js"></script>
-    <script src="./scripts/mainpage/navbar.js"></script>
+    <!-- <script src="./scripts/mainpage/navbar.js"></script> -->
+    <script src="./scripts/mainpage/visualizer.js"></script>
 </body>
 
 </html>

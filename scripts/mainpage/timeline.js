@@ -19,3 +19,8 @@ gsap.from(".moduletext", {
         toggleActions: "play none none none"
     }
 })
+
+gsap.from(".mainTitle", {
+    duration: 2,
+    opacity: 0,
+})

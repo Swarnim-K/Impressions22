@@ -2,6 +2,7 @@
 /* Small devices (landscape phones, less than 768px) */
 @media (min-width: 576px) and (max-width: 767.98px) {  
 
+<<<<<<< HEAD
     :root {
         --displace: -11em
       }
@@ -11,10 +12,24 @@
         width: 80%;
     }
 
+=======
+>>>>>>> liquid
     .menu-icon {
         display: none;
     }
 
+<<<<<<< HEAD
+=======
+    .navbar{
+        height: 7vh;
+        width: 80%;
+    }
+
+    .navbar-icon a{
+        font-size: 3vh;
+    }
+
+>>>>>>> liquid
     .siteLogo{
         width: 20%;
         border-top-left-radius: 0;
@@ -23,9 +38,10 @@
     }
 
     .siteLogo img{
-        height: 12vh;
+        height: 13vh;
     }
 
+<<<<<<< HEAD
     .navbar{
         width: 80%;
     }
@@ -51,14 +67,26 @@
       
     #countdown ul li span {
         font-size: 5vh;
+=======
+    #titleImage{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        z-index: 1;
+>>>>>>> liquid
     }
     
     .aboutUsSection{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         z-index: 100;
+<<<<<<< HEAD
         transform: translateY(-12em);
+=======
+>>>>>>> liquid
     }
     
     .aboutUsTitle {
@@ -78,7 +106,6 @@
         text-align: center;
         color: white;
         font-family: 'Poppins', sans-serif;
-        margin-top: 2vh;
         padding: 1vh;
     }
     
@@ -86,12 +113,22 @@
         text-align: center;
         color: white;
         font-family: 'Poppins', sans-serif;
-        margin-top: 2vh;
         padding: 1vh;
     }
 
     .moduletext{
         font-size: 3vh;
-    } 
+    }
+    
+    .social-icons i {
+        top: 25px;
+        left: 25px;
+        transform: translateY(-50%) translateX(-50%);
+      }
+      
+      .social-icons a:before {
+        width: 50px;
+        height: 50px;
+      }
 
 }

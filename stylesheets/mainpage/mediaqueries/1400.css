@@ -20,10 +20,6 @@
         transform: translateY(-5vh);
     }
 
-    .navbar{
-        width: 90%;
-    }
-
     #headline {
         text-align: center;
         font-family: 'Poppins', sans-serif;
@@ -60,29 +56,21 @@
     .aboutUsSection{
         display: flex;
         flex-direction: column;
-        width: 80%;
-        z-index: 300;
+        width: 100%;
+        z-index: 100;
     }
     
     .aboutUsTitle {
-        padding-top: 2vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         color: white;
-        font-size: 11vh;
+        font-size: 10vh;
         letter-spacing: 1vh;
         font-weight: 800;
         font-family: 'Poppins', sans-serif;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
     
     .aboutUsTitleDescription {
-        text-align: center;
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        margin-top: 2vh;
-        padding: 1vh;
-        font-size: 3.5vh;
+        font-size: 3vh;
     }
     
     .aboutUsModuleDescription {
@@ -90,13 +78,12 @@
         color: white;
         font-family: 'Poppins', sans-serif;
         margin-top: 2vh;
-        margin-bottom: 12vh;
         padding: 1vh;
-        font-size: 3.5vh;
+        font-size: 3vh;
     }
     
     .moduletext{
-        font-size: 4vh;
+        font-size: 3.5vh;
     }
 
 }
