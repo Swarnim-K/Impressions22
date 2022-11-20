@@ -59,7 +59,7 @@ var media = [
     cx = 0,
     cy = 0,
 
-    playing = false,
+    playing = true,
     startedAt, pausedAt,
 
     rotation = 0,
@@ -90,24 +90,24 @@ function featureNotSupported() {
     return document.getElementById('no-audio').style.display = "block";
 }
 
-function hideLoader() {
-    return document.getElementById('loading').className = "hide";
-}
+// function hideLoader() {
+//     return document.getElementById('loading').className = "hide";
+// }
 
-function updateLoadingMessage(text) {
-    msgElement.textContent = text;
-}
+// function updateLoadingMessage(text) {
+//     msgElement.textContent = text;
+// }
 
 function initializeAudio() {
     var xmlHTTP = new XMLHttpRequest();
 
-    updateLoadingMessage("- Loading Audio Buffer -");
+    // updateLoadingMessage("- Loading Audio Buffer -");
 
     xmlHTTP.open('GET', media[0], true);
     xmlHTTP.responseType = "arraybuffer";
 
     xmlHTTP.onload = function (e) {
-        updateLoadingMessage("- Decoding Audio File Data -");
+        // updateLoadingMessage("- Decoding Audio File Data -");
         analyser = actx.createAnalyser();
         analyser.fftSize = fftSize;
         analyser.minDecibels = -100;
@@ -115,9 +115,9 @@ function initializeAudio() {
         analyser.smoothingTimeConstant = 0.8;
 
         actx.decodeAudioData(this.response, function (buffer) {
-            console.timeEnd('decoding audio data');
+            // console.timeEnd('decoding audio data');
 
-            msgElement.textContent = "- Ready -";
+            // msgElement.textContent = "- Ready -";
 
             audio_buffer = buffer;
             gainNode = actx.createGain();
@@ -131,32 +131,33 @@ function initializeAudio() {
 
             createStarField();
             createPoints();
-            createAudioControls();
+            playAudio();
+            // createAudioControls();
         }, function (e) { alert("Error decoding audio data" + e.err); });
     };
 
     xmlHTTP.send();
 }
 
-function createAudioControls() {
-    var playButton = document.createElement('a');
+// function createAudioControls() {
+//     var playButton = document.createElement('a');
 
-    playButton.setAttribute('id', 'playcontrol');
-    playButton.textContent = "pause";
-    playButton.style.position = "absolute";
-    playButton.style.top = "90vh"
-    playButton.style.zIndex = "2000"
-    document.body.appendChild(playButton);
+//     playButton.setAttribute('id', 'playcontrol');
+//     playButton.textContent = "pause";
+//     playButton.style.position = "absolute";
+//     playButton.style.top = "90vh"
+//     playButton.style.zIndex = "2000"
+//     document.body.appendChild(playButton);
 
-    playButton.addEventListener('click', function (e) {
-        e.preventDefault();
-        this.textContent = playing ? "play" : "pause";
-        toggleAudio();
-    });
+//     playButton.addEventListener('click', function (e) {
+//         e.preventDefault();
+//         this.textContent = playing ? "play" : "pause";
+//         toggleAudio();
+//     });
 
-    playAudio();
-    hideLoader();
-}
+//     playAudio();
+//     hideLoader();
+// }
 
 // Makes the button actually turn on or off the audio
 function toggleAudio() {
