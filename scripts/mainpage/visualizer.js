@@ -64,9 +64,11 @@ var media = [
 
     rotation = 0,
     msgElement = document.querySelector('#loading .msg'),
+    playButton = document.querySelector("#play"),
     avg, ctx, actx, asource, gainNode, analyser, frequencyData, frequencyDataLength, timeData;
 
 
+playButton.classList.add("preloader-remove")
 window.addEventListener('load', () => {
     initialize();
 });
@@ -120,6 +122,7 @@ function initializeAudio() {
             console.timeEnd('decoding audio data');
 
             msgElement.textContent = "- Enter the Pravah -";
+            playButton.classList.remove("preloader-remove")
 
             audio_buffer = buffer;
             gainNode = actx.createGain();
@@ -141,14 +144,26 @@ function initializeAudio() {
 }
 
 function createAudioControls() {
-    var playButton = document.querySelector("#play");
-    var preloader = document.querySelector(".preloader")
+    var preloader = document.querySelector(".preloader");
+    var pauseButton = document.querySelector(".siteLogo");
+
 
     playButton.addEventListener('click', function (e) {
         msgElement.textContent = "";
+        setTimeout(() => {
+            msgElement.textContent = "Use COEP Logo to Play/Pause";
+        }, 10000)
         preloader.classList.add("preloader-remove")
         playButton.classList.add("preloader-remove")
         return playAudio();
+    });
+    pauseButton.addEventListener('click', function (e) {
+        if (playing == true) {
+            return pauseAudio();
+        }
+        if (playing == false) {
+            return playAudio();
+        }
     });
 }
 

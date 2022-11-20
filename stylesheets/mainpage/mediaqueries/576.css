@@ -2,29 +2,17 @@
 /* Small devices (landscape phones, less than 768px) */
 @media (min-width: 576px) and (max-width: 767.98px) {  
 
-    :root {
-        --v1: #be91c6;
-        --v2: #8a65cc;
-        --v3: #5e30d9;
-        --v4: #3b1895;
-        --v5: #361785;
-        --v6: #2e1470;
-        --v7: #27115e;
-        --v8: #1e0d49;
-        --v9: #180b3b;
-        --s1: #fea798;
-        --s2: #ff846e;
-        --cloud: #fea798;
-        --displace: -12em
-      }
+    .menu-icon {
+        display: none;
+    }
 
-
-    .mainTitle img{
+    .navbar{
+        height: 7vh;
         width: 80%;
     }
 
-    .menu-icon {
-        display: none;
+    .navbar-icon a{
+        font-size: 3vh;
     }
 
     .siteLogo{
@@ -32,37 +20,22 @@
     }
 
     .siteLogo img{
-        height: 12vh;
+        height: 13vh;
     }
 
-    .countdown-container {
+    #titleImage{
+        width: 100%;
         position: absolute;
-        bottom: 2vh;
-    }
-
-
-    #headline {
-        font-size: 5vh;
-        margin-bottom: 5vh;
-        letter-spacing: 0.3vh;
-    }
-      
-    #countdown ul li {
-        font-size: 1.2vh;
-        list-style-type: none;
-        margin-left: 3vw;
-        margin-right: 3vw;
-        width: 15vw;
-    }
-      
-    #countdown ul li span {
-        font-size: 5vh;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        z-index: 1;
     }
     
     .aboutUsSection{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         z-index: 100;
     }
     
@@ -83,7 +56,6 @@
         text-align: center;
         color: white;
         font-family: 'Poppins', sans-serif;
-        margin-top: 2vh;
         padding: 1vh;
     }
     
@@ -91,12 +63,22 @@
         text-align: center;
         color: white;
         font-family: 'Poppins', sans-serif;
-        margin-top: 2vh;
         padding: 1vh;
     }
 
     .moduletext{
         font-size: 3vh;
-    } 
+    }
+    
+    .social-icons i {
+        top: 25px;
+        left: 25px;
+        transform: translateY(-50%) translateX(-50%);
+      }
+      
+      .social-icons a:before {
+        width: 50px;
+        height: 50px;
+      }
 
 }
