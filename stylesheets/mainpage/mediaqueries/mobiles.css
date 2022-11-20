@@ -18,32 +18,10 @@
       }
 
 
-<<<<<<< HEAD
-    .mainTitle img{
-        width: 80%;
-    }
-
-=======
->>>>>>> liquid
     .menu-icon {
         display: none;
     }
 
-<<<<<<< HEAD
-    .siteLogo{
-        width: 30%;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-
-    .siteLogo img{
-        height: 12vh;
-    }
-
-    .navbar{
-        width: 70%;
-=======
     .navbar{
         height: 5vh;
         width: 70%;
@@ -59,7 +37,6 @@
 
     .siteLogo img{
         height: 10vh;
->>>>>>> liquid
     }
 
     .navbar-icon a{
@@ -88,15 +65,7 @@
     }
     
     .aboutUsSection{
-<<<<<<< HEAD
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        z-index: 200;
-        transform: translateY(-12em);
-=======
         width: 90%;
->>>>>>> liquid
     }
 
     .aboutUsTitle {

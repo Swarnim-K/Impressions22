@@ -96,11 +96,6 @@
 }
 
 #titleImage{
-    width: 70%;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translateY(-70%) translateX(-50%);
     z-index: 1;
 }
 
