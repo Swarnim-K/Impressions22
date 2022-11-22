@@ -1,59 +1,13 @@
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     
-    :root {
-        --v1: #be91c6;
-        --v2: #8a65cc;
-        --v3: #5e30d9;
-        --v4: #3b1895;
-        --v5: #361785;
-        --v6: #2e1470;
-        --v7: #27115e;
-        --v8: #1e0d49;
-        --v9: #180b3b;
-        --s1: #fea798;
-        --s2: #ff846e;
-        --cloud: #fea798;
-        --displace: -12em
-      }
-
-
-    .menu-icon {
-        display: none;
-    }
-
-    .navbar{
-        height: 5vh;
-        width: 70%;
-    }
-
-    .navbar-icon a{
-        font-size: 2vh;
-    }
-
-    .siteLogo{
-        width: 30%;
-    }
-
     .siteLogo img{
         height: 10vh;
     }
 
-    .navbar-icon a{
-        font-size: 3vh;
-        padding-right: 1vh;
+    .navbar{
+        height: 6vh;
     }
-
-    .countdown-container {
-        margin-bottom: 2em;
-        z-index: 500;
-    }
-
-    #crowd-first {
-        transform: translateY(2.5vh);
-        position: fixed;
-    }
-
 
     #titleImage{
         width: 100%;
@@ -63,42 +17,47 @@
         transform: translateY(-50%) translateX(-50%);
         z-index: 1;
     }
-    
-    .aboutUsSection{
-        width: 90%;
-    }
 
-    .aboutUsTitle {
-        font-size: 6vh;
-        letter-spacing: 1vh;
-        font-weight: 800;
-        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
-    }
-    
-    .aboutUsTitleDescription {
-        width: 90%;
-        font-size: 2vh;
-    }
-    
-    .aboutUsModuleDescription {
-        padding: 1vh;
-        width: 90%;
-        font-size: 2vh;
-    }
-    
-    .moduletext{
-        font-size: 2.5vh;
-    }
+    .bars{
+        width: 20px;
+        height: 2px;
+        background: #fff;
+      }
       
-    .social-icons i {
-      top: 21px;
-      left: 21px;
-      transform: translateY(-50%) translateX(-50%);
+      .bars::before,
+      .bars::after{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: #fff;
+      }
+      
+      .bars::before{
+        margin-top: 6px;
+      }
+      
+      .bars::after{
+        margin-top: 12px;
+      }
+
+      nav .close div::before,
+      nav .close div::after{
+        width: 20px;
+        height: 2px;
+      }
+
+
+    .social-icons li a i {
+        font-size: 50%;
+        top: 26px;
+        left: 26px;
+        transform: translateY(-50%) translateX(-50%);
     }
     
     .social-icons a:before {
-      width: 42px;
-      height: 42px;
+        width: 50px;
+        height: 50px;
     }
 
 }

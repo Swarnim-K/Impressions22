@@ -7,16 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressions</title>
     <link rel="shortcut icon" href="./images/ImpressionsFoot.png" type="image/x-icon">
-    <link rel="stylesheet" href="./stylesheets/mainpage/landscape.css">
     <link rel="stylesheet" href="./stylesheets/mainpage/styles.css">
-    <link rel="stylesheet" href="./stylesheets/mainpage/navbar.css">
     <link rel="stylesheet" href="./stylesheets/mainpage/visualizer.css">
     <link rel="stylesheet" href="./stylesheets/mainpage/mediaqueries/mobiles.css">
-    <link rel="stylesheet" href="./stylesheets/mainpage/mediaqueries/576.css">
-    <link rel="stylesheet" href="./stylesheets/mainpage/mediaqueries/768.css">
-    <link rel="stylesheet" href="./stylesheets/mainpage/mediaqueries/992.css">
-    <link rel="stylesheet" href="./stylesheets/mainpage/mediaqueries/1200.css">
-    <link rel="stylesheet" href="./stylesheets/mainpage/mediaqueries/1400.css">
+    <link rel="stylesheet" href="./stylesheets/mainpage/mediaqueries/tablets.css">
     <link rel="stylesheet" href="./images/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,28 +20,15 @@
 
 <body>
 
-
-    <div class='cursor2' id="cursor2"></div>
-    <div class='cursor3' id="cursor3"></div>
-
     <div class="siteLogo">
         <img src="./images/coep and foot logo.png" alt="">
     </div>
 
     <div class="navbar">
-        <div class="navbar-icon" id="events">
-            <a href="./Events/index.html">
-                Events
-            </a>
+        <div class="container">
+            <div class="bars"></div>
         </div>
     </div>
-
-    <div class="menu-icon hover-target">
-        <span class="menu-icon__line menu-icon__line-left"></span>
-        <span class="menu-icon__line"></span>
-        <span class="menu-icon__line menu-icon__line-right"></span>
-    </div>
-
 
     <div class="main-body-container">
 
@@ -55,9 +36,38 @@
 
         </div>
 
-        <svg version="1.1" id="play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" height="100px" width="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100"
-            xml:space="preserve">
+        <nav>
+            <div class="close">
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="./Events/index.html">Events</a></li>
+            </ul>
+            <ul class="social-icons">
+                <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/impressionsCOEP/">
+                        <i class="fa fa-facebook">
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/impressions_coep/"><i
+                            class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/coepimpressions"><i
+                            class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/coepimpressions"><i
+                            class="fa fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <svg version="1.1" class="preloader-remove" id="play" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100px" width="100px"
+            viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
             <path class="stroke-solid" fill="none" stroke="#ddbe72" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
        C97.3,23.7,75.7,2.3,49.9,2.5" />
             <path class="icon" fill="#ddbe72"
@@ -73,81 +83,17 @@
             <p>Sorry, this experiment requires the Web Audio API.</p>
             <a href='http://caniuse.com/#feat=audio-api' target='_blank'>See browser support</a>
         </div>
+        <div class="headphone">
+            This website has audio. Best experienced with headphones
+            <i class="fa fa-headphones"></i>
+        </div>
 
 
         <div class="titleBlock">
 
         </div>
-        <img id="titleImage"
-            src="https://res.cloudinary.com/wizeric/image/upload/v1668081341/Impressions/name_logo_eia6at.png" alt="">
+        <img id="titleImage" src="./images/impressions name logo additions3-01.png" alt="">
 
-        <div class="aboutUsSection">
-
-            <div class="aboutUsTitle">
-                About Us
-            </div>
-
-            <div class="aboutUsTitleDescription">
-                Impressions is an extravagenza of Art and Culture. <br>
-                A creative environment meant for art and the artist. <br>
-                A space to showcase world's boundless art and do justice to its glory.
-            </div>
-
-            <div class="aboutUsModuleDescription">
-                6 modules of Impressions <br>
-                <div class="moduletext">
-                    <a href="./Events/index.html#m3">
-                        Art and Craft
-                    </a>
-                </div>
-                <div class="moduletext">
-                    <a href="./Events/index.html#m6">
-                        Shoutout
-                    </a>
-                </div>
-                <div class="moduletext">
-                    <a href="./Events/index.html#m4">
-                        Camera
-                    </a>
-                </div>
-                <div class="moduletext">
-                    <a href="./Events/index.html#m2">
-                        Drama
-                    </a>
-                </div>
-                <div class="moduletext">
-                    <a href="./Events/index.html#m1">
-                        Dance
-                    </a>
-                </div>
-                <div class="moduletext">
-                    <a href="./Events/index.html#m5">
-                        Music
-                    </a>
-                </div>
-                24 enthralling events to give all the artists from India and abroad, <br>
-                an opportunity to connect with the best talents on the globe.
-            </div>
-
-            <ul class="social-icons">
-                <li>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/impressionsCOEP/"><i
-                            class="fa fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/impressions_coep/"><i
-                            class="fa fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/coepimpressions"><i
-                            class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/coepimpressions"><i
-                            class="fa fa-linkedin"></i></a>
-                </li>
-            </ul>
-        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
@@ -158,10 +104,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="./scripts/mainpage/countdown.js"></script> -->
-    <script src="./scripts/mainpage/timeline.js"></script>
-    <!-- <script src="./scripts/mainpage/hamburger.js"></script> -->
-    <!-- <script src="./scripts/mainpage/navbar.js"></script> -->
     <script src="./scripts/mainpage/visualizer.js"></script>
 </body>
 
