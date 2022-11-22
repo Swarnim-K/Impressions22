@@ -1,5 +1,5 @@
 var media = [
-    "../../audio.mp3"
+    "https://res.cloudinary.com/wizeric/video/upload/v1669140176/A_Lovely_Day_ts4kx8.mp3"
 ],
     fftSize = 1024,
     // [32, 64, 128, 256, 512, 1024, 2048]
