@@ -1,12 +1,5 @@
-/*
- * Noel Delgado | @pixelia_me
- *
- * Music by Term and Conditions Mixes
- * https://soundcloud.com/term-and-conditions-mixes/new-year-dubstep-minimix
-*/
-
 var media = [
-    "https://res.cloudinary.com/wizeric/video/upload/v1668789029/y2mate.com_-_Yanni_1001_320kbps_lcnqwe.mp3"
+    "../../audio.mp3"
 ],
     fftSize = 1024,
     // [32, 64, 128, 256, 512, 1024, 2048]
@@ -143,15 +136,12 @@ function initializeAudio() {
 
 function createAudioControls() {
     var preloader = document.querySelector(".preloader");
-    var pauseButton = document.querySelector(".siteLogo");
+    var pauseButton = document.querySelector(".titleBlock");
     var headphone = document.querySelector(".headphone");
 
 
     playButton.addEventListener('click', function (e) {
         msgElement.textContent = "";
-        setTimeout(() => {
-            msgElement.textContent = "Use COEP Logo to Play/Pause";
-        }, 10000)
         preloader.classList.add("preloader-remove")
         playButton.classList.add("preloader-remove")
         headphone.classList.add("preloader-remove")
