@@ -1,3 +1,6 @@
+const song = document.getElementById("audio")
+console.log(song)
+
 var media = [
     "https://res.cloudinary.com/wizeric/video/upload/v1669140176/A_Lovely_Day_ts4kx8.mp3"
 ],
