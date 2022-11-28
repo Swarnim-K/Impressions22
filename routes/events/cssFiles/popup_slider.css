@@ -279,7 +279,7 @@
     }
 
     .slider .box .details {
-        padding: 10px 130px;
+        padding: 45px 130px;
         height: 65%;
         margin-top: 8%;
         margin-bottom: 1%;
@@ -361,9 +361,9 @@
     }
 
     #popup a {
-        padding: 10px 20px;
-        margin-top: 24px;
-        background-color: white;
+        color: #7bebf6;
+        font-size: 16.5px;
+        padding: 0px 4px;
     }
 
 }

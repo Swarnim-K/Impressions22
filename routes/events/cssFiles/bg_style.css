@@ -34,6 +34,16 @@ body {
     background-position: center center;
 }
 
+canvas{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -999;
+}
+
 /* #holder {
     position: fixed;
     top: 0;
@@ -109,6 +119,7 @@ h1.titleText {
 .twoLogos,
 .topLine {
     position: fixed;
+    z-index: 1000;
 }
 
 .twoLogos img {
@@ -795,4 +806,9 @@ body.popupActive {
     stroke-dasharray: 30, 290;
     stroke-dashoffset: 48;
     transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* new changes */
+.coepTechLogo img{
+    cursor: pointer;
 }

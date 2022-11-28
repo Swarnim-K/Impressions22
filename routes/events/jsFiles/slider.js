@@ -4,7 +4,7 @@ const slider = document.querySelector(".slider")
 const trail = document.querySelector(".trail").querySelectorAll("div")
 
 // Transform value
-let value = 0
+let Tvalue  = 0
 // trail index number
 let trailValue = 0
 // interval (Duration)
@@ -13,15 +13,15 @@ let interval = 600000
 // Function to slide forward
 const slide = (condition) => {
     // CLear interval
-    clearInterval(start)
+    clearInterval(Astart)
     // update value and trailValue
     condition === "increase" ? initiateINC() : initiateDEC()
     // move slide
-    move(value, trailValue)
+    move(Tvalue, trailValue)
     // Restart Animation
-    animate()
+    Sanimate()
     // start interal for slides back 
-    start = setInterval(() => slide("increase"), interval);
+    Astart = setInterval(() => slide("increase"), interval);
 }
 
 // function for increase(forward, next) configuration
@@ -29,7 +29,7 @@ const initiateINC = () => {
     // Remove active from all trails
     trail.forEach(cur => cur.classList.remove("active"))
     // increase transform value
-    value === 75 ? value = 0 : value += 25
+    Tvalue === 75 ? Tvalue = 0 : Tvalue += 25
     // update trailValue based on value
     trailUpdate()
 }
@@ -39,7 +39,7 @@ const initiateDEC = () => {
      // Remove active from all trails
     trail.forEach(cur => cur.classList.remove("active"))
     // decrease transform value
-    value === 0 ? value = 75 : value -= 25
+    Tvalue === 0 ? Tvalue = 75 : Tvalue -= 25
      // update trailValue based on value
     trailUpdate()
 }
@@ -58,23 +58,23 @@ tl.from(".bg", {x: "-100%", opacity: 0})
   .from(".details>h1", {opacity: 0, y: "50px"}, "-=0.5")
 
 // function to restart animation
-const animate = () => tl.restart()
+const Sanimate = () => tl.restart()
 
 // function to update trailValue based on slide value
 const trailUpdate = () => {
-    if (value === 0) {
+    if (Tvalue === 0) {
         trailValue = 0
-    } else if (value === 25) {
+    } else if (Tvalue === 25) {
         trailValue = 1
-    } else if (value === 50) {
+    } else if (Tvalue === 50) {
         trailValue = 2
-    } else if (value===75){
+    } else if (Tvalue===75){
         trailValue = 3
     }
 }   
 
 // Start interval for slides
-let start = setInterval(() => slide("increase"), interval)
+let Astart = setInterval(() => slide("increase"), interval)
 
 // Next  and  Previous button function (SVG icon with different classes)
 document.querySelectorAll("svg").forEach(cur => {
@@ -85,7 +85,7 @@ document.querySelectorAll("svg").forEach(cur => {
 // function to slide when trail is clicked
 const clickCheck = (e) => {
     // CLear interval
-    clearInterval(start)
+    clearInterval(Astart)
     // remove active class from all trails
     trail.forEach(cur => cur.classList.remove("active"))
     // Get selected trail
@@ -95,23 +95,23 @@ const clickCheck = (e) => {
 
     // Update slide value based on the selected trail
     if(check.classList.contains("box1")) {
-        value = 0
+        Tvalue = 0
     } else if (check.classList.contains("box2")) {
-        value = 25
+        Tvalue = 25
     } else if (check.classList.contains("box3")) {
-        value = 50
+        Tvalue = 50
     }
     else {
-        value = 75
+        Tvalue = 75
     }
     // update trail based on value
     trailUpdate()
     // transfrom slide
-    move(value, trailValue)
+    move(Tvalue, trailValue)
     // start animation
-    animate()
+    Sanimate()
     // start interval
-    start = setInterval(() => slide("increase"), interval)
+    Astart = setInterval(() => slide("increase"), interval)
 }
 
 // Add function to all trails

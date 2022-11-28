@@ -11,16 +11,18 @@
 <script src="jsFiles/jq.js"></script>
 <title>Events | Impressions'22 | COEP Tech</title>
 <link rel="icon" href="images/icon_impressions.ico" type="image/x-icon">
+<link rel="stylesheet" href="cssFiles/navbar.css">
 <link rel="stylesheet" href="cssFiles/preloader.css">
 <link rel="stylesheet" href="cssFiles/bg_style.css">
 <link rel="stylesheet" href="cssFiles/goToTop.css">
 <link rel="stylesheet" href="cssFiles/popup_slider.css">
+<link rel="stylesheet" href="images/font-awesome-4.7.0/css/font-awesome.min.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </html>
 
 <body onclick="">
-
+    <!-- preloader -->
     <div id="holder"></div>
     <div id="preloadLeft" class="hiding hide">
         <div class="backdrop"></div>
@@ -41,9 +43,47 @@
         })
     </script>
 
+    <!-- navbar -->
+    <div class="barsContainer">
+        <img class="bars" src="images/icons8-menu-100.png" alt="" onclick="showHidemnbar()" id="barsIcon">
+    </div>
+
+    <nav class="mainNav" id="mainNavbar">
+        <div class="barsContainer">
+            <img class="bars" src="images/icons8-close-96.png" alt="" onclick="showHidemnbar()" id="barsIcon">
+        </div>
+        <ul>
+            <li><a href="../../index.html" class="mainNavItem">Home</a></li>
+        </ul>
+        <ul class="social-icons">
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/impressionsCOEP/">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/impressions_coep/">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/coepimpressions">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/coepimpressions">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- main content -->
     <main>
         <div class="twoLogos">
-            <img src="images/coep and foot logo.png" alt="">
+            <a href="../../index.html" style="cursor: pointer;">
+                <img src="images/coep and foot logo.png" alt=""></a>
         </div>
         <div class="topLine" id="blur0">
             <p>College of Engineering Pune Technological University Presents Impressions'22</p>
@@ -518,11 +558,14 @@
                                     href="mailto:secretary.impressions@coep.ac.in">secretary.impressions@coep.ac.in</a>
                             </li>
                             <li style="margin-top: 12px;">Contact -
-                            <li class="noBullets" style="margin-top: 8px;"><span>Parva Shah (Events Head) - </span> +91
+                            <li class="noBullets" style="margin-top: 8px;"><span>Parva Shah (Events and Proshows Head) -
+                                </span> +91
                                 8128152401</li>
-                            <li class="noBullets" style="margin-top: 5px;"><span>Asmi Sathe (Events Head) - </span> +91
+                            <li class="noBullets" style="margin-top: 5px;"><span>Asmi Sathe (Events and Proshows Head) -
+                                </span> +91
                                 7666144658</li>
-                            <li class="noBullets" style="margin-top: 5px;"><span>Aryan Maria (Events Head) - </span> +91
+                            <li class="noBullets" style="margin-top: 5px;"><span>Aryan Maria (Events and Proshows Head)
+                                    - </span> +91
                                 9766260001</li>
                             </li>
                         </div>
@@ -570,7 +613,7 @@
 
                         <div class="illustration">
                             <div class="inner"></div>
-                            <a href="https://forms.gle/DtgV9siuMhkQdy1g8" target="_blank">Register</a>
+                            <a href="" target="_blank" id="reg_link_btn">Register</a>
                         </div>
                     </div>
 
@@ -588,7 +631,7 @@
 
                         <div class="illustration">
                             <div class="inner"></div>
-                            <a href="https://forms.gle/DtgV9siuMhkQdy1g8" target="_blank">Register</a>
+                            <a href="" target="_blank" id="reg_link_btn">Register</a>
                         </div>
                     </div>
 
@@ -605,7 +648,7 @@
 
                         <div class="illustration">
                             <div class="inner"></div>
-                            <a href="https://forms.gle/DtgV9siuMhkQdy1g8" target="_blank">Register</a>
+                            <a href="" target="_blank" id="reg_link_btn">Register</a>
                         </div>
                     </div>
 
@@ -622,7 +665,7 @@
 
                         <div class="illustration">
                             <div class="inner"></div>
-                            <a href="https://forms.gle/DtgV9siuMhkQdy1g8" target="_blank">Register</a>
+                            <a href="" target="_blank" id="reg_link_btn">Register</a>
                         </div>
                     </div>
 
@@ -666,10 +709,17 @@
         AOS.init();
     </script>
 
-    <script src="jsFiles/navBar.js"></script>
+    <canvas>
+        <script src="bgScript/three.js"></script>
+        <script src="bgScript/script.js"></script>
+    </canvas>
+
     <script src="jsFiles/poppup.js"></script>
     <script src="jsFiles/scrolup.js"></script>
+    <script src="jsFiles/navBar.js"></script>
+    <script src="jsFiles/mainNavbar.js"></script>
     <script src="jsFiles/slider.js"></script>
+
 </body>
 
 </html>
