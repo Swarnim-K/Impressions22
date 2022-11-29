@@ -11,7 +11,7 @@ function togglePopup(id) {
     scrollbtn.classList.toggle('active');
     var bodyScroll = document.querySelector("body");
     bodyScroll.classList.toggle('popupActive');
-    var barIcn = document.getElementById("barsIcon");
+    var barIcn = document.getElementById("nvb2");
     barIcn.classList.toggle('active');
 
 

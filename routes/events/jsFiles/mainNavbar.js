@@ -1,11 +1,11 @@
-const open = document.querySelector('.container2');
-const close = document.querySelector('.close');
-var tl2 = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
-open.addEventListener('click', () => {
-    if (tl2.reversed()) {
-        tl2.play();
+const openn = document.querySelector('.container2');
+const closee = document.querySelector('.close');
+var tll2 = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
+openn.addEventListener('click', () => {
+    if (tll2.reversed()) {
+        tll2.play();
     } else {
-        tl2
+        tll2
             .set($('canvas'), { css: { zIndex: 450 } })
             .set($('.navbar2'), { css: { zIndex: 400 } })
             .set($('.topLine'), { css: { zIndex: 400 } })
@@ -18,6 +18,6 @@ open.addEventListener('click', () => {
     }
 });
 
-close.addEventListener('click', () => {
-    tl2.reverse();
+closee.addEventListener('click', () => {
+    tll2.reverse();
 });

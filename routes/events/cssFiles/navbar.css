@@ -240,3 +240,8 @@
     }
 
 }
+
+#nvb2.active{
+  z-index: -1;
+  display: none;
+}
