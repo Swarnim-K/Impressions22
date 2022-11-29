@@ -116,10 +116,13 @@ h1.titleText {
     -webkit-text-fill-color: transparent;
 }
 
-.twoLogos,
-.topLine {
+.twoLogos{
     position: fixed;
     z-index: 1000;
+}
+.topLine {
+    position: fixed;
+    z-index: 900;
 }
 
 .twoLogos img {
@@ -351,6 +354,7 @@ h1.titleText {
 
 @media (max-width: 950px) {
     .twoLogos {
+        z-index: 900;
         width: 100vw;
         display: flex;
         align-items: center;
