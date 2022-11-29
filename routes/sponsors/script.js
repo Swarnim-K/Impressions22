@@ -6,12 +6,11 @@ const open = document.querySelector('.nav-container');
 const close = document.querySelector('.close');
 var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
 open.addEventListener('click', () => {
-    console.log("Clicked")
     if (tl.reversed()) {
         tl.play();
     } else {
         tl
-            .set($('particle'), { css: { zIndex: 1000 } })
+            .set($('#particle'), { css: { zIndex: 500 } })
             .to('nav', { right: 0 })
             .to('nav', { height: '100vh' }, '-=.1')
             .to('nav ul li a', { opacity: 1, pointerEvents: 'all', stagger: .2 }, '-=.8')

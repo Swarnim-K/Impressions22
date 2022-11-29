@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Oswald&display=swap');
 
 *{
+  margin: 0;
+  padding: 0;
     font-style: normal;
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -17,8 +19,6 @@
 
 
 body {
-    margin: 0%;
-    padding: 0%;
     background-color: #000506;
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,9 +43,9 @@ body {
     align-items: center;
     justify-content: end;
     padding-right: 2vw;
-    background: rgba(0, 0, 0, 0);
-    /* backdrop-filter: blur(8.1px);
-    -webkit-backdrop-filter: blur(8.1px); */
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8.1px);
+    -webkit-backdrop-filter: blur(8.1px);/
 }
 
 .siteLogo{
@@ -55,12 +55,12 @@ body {
     align-items: center;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 100;
     width: max-content;
     border-bottom-right-radius: 1em;
-    background: rgba(0, 0, 0, 0);
-    /* backdrop-filter: blur(8.1px);
-    -webkit-backdrop-filter: blur(8.1px); */
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8.1px);
+    -webkit-backdrop-filter: blur(8.1px);
 }
 
 .siteLogo img{
@@ -68,10 +68,11 @@ body {
     height: 15vh;
     padding: 0.2vw;
 }
+
 .nav-container{
-  z-index: 10000;
+  z-index: 400;
   width: 30px;
-  /* height: 20px; */
+  height: 20px;
 }
 
 .bars{
@@ -98,33 +99,31 @@ body {
 }
 
 nav{
-  z-index: 500;
-  position: relative;
+  padding: 10vh;
+  z-index: 600;
+  position: fixed;
   width: 100%;
-  height: 200%;
-  background: rgb(0, 0, 0);
+  height: 30px;
+  background: rgba(0, 0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* right: -200vw; */
+  right: -200vw;
 }
 
 nav ul {
-  position: absolute;
   list-style: none;
-  margin-top: 5rem;
-  top: 5%;
 }
 
 nav ul li{
   text-align: center;
-  margin: 20px 0;
+  margin: 50px 0;
 }
 
 nav ul li a{
   color: #fafafa;
-  font-size: 25px;
+  font-size: 6vh;
   text-decoration: none;
   font-weight: 500;
   position: relative;
@@ -143,7 +142,7 @@ nav ul li a:after{
   bottom: -10px;
   left: 0;
   transform-origin: left;
-  transition: transform .1s ease;
+  transition: transform .5s ease;
   transform: scaleX(0);
 }
 
@@ -179,7 +178,7 @@ nav .close div::after{
   width: 30px;
   height: 4px;
   background: #fff;
-  transition: background .1s ease;
+  transition: background .5s ease;
 }
 nav .close div::before{
   transform: rotate(-45deg);
@@ -192,6 +191,67 @@ nav .close div::after{
 nav .close:hover div::before,
 nav .close:hover div::after{
   background: rgb(209, 3, 3);
+}
+
+@media (max-width: 992px){
+  h1{
+    font-size: 25px;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    
+  .siteLogo img{
+      height: 10vh;
+  }
+
+  .navbar{
+      height: 6vh;
+  }
+
+  .bars{
+      width: 20px;
+      height: 2px;
+      background: #fff;
+    }
+    
+    .bars::before,
+    .bars::after{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background: #fff;
+    }
+    
+    .bars::before{
+      margin-top: 6px;
+    }
+    
+    .bars::after{
+      margin-top: 12px;
+    }
+
+    nav .close div::before,
+    nav .close div::after{
+      width: 20px;
+      height: 2px;
+    }
+
+
+  .social-icons li a i {
+      font-size: 50%;
+      top: 26px;
+      left: 26px;
+      transform: translateY(-50%) translateX(-50%);
+  }
+  
+  .social-icons a:before {
+      width: 50px;
+      height: 50px;
+  }
+
 }
 
 
@@ -263,7 +323,7 @@ nav .close:hover div::after{
   } */
 
   .main {
-    padding-top: 70px;
+    padding-top: 13vh;
     padding-left: 30px;
     padding-right: 0;
     width: 1200px;

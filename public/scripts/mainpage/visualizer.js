@@ -115,7 +115,7 @@ function initializeAudio() {
 
         actx.decodeAudioData(this.response, function (buffer) {
 
-            msgElement.textContent = "- Enter the Pravah -";
+            msgElement.textContent = "- Enter the प्रवाह -";
             playButton.classList.remove("preloader-remove")
 
             audio_buffer = buffer;
