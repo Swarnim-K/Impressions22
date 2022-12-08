@@ -23,12 +23,19 @@
     }
 
     .aboutUs{
+      top: 70vh;
       width: 80%;
       font-size: 1.5vh;
       letter-spacing: 0.2vh;
       position: absolute;
       bottom: 10vh;
       text-shadow: -1px -1px 0px #000, 1.5px 1.5px 0px #000, 3px 3px 0px #000;
+    }
+
+    .custom-btn {
+      width: 35%;
+      height: 25px;
+      font-size: 0.9vh;
     }
 
     .bars{

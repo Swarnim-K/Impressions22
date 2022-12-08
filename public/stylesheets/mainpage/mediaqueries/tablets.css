@@ -1,16 +1,13 @@
 @media (min-width: 576px) and (max-width: 1200px) {
 
-    /* .navbar{
-        height: 5vh;
-        width: 65%;
-    }
-
-    .siteLogo{
-        width: max-content;
-    }
-
-    .siteLogo img{
-        height: 15vh;
-    } */
+    .aboutUs{
+        top: 70vh;
+        width: 80%;
+        font-size: 1.8vh;
+        letter-spacing: 0.2vh;
+        position: absolute;
+        bottom: 10vh;
+        text-shadow: -1px -1px 0px #000, 1.5px 1.5px 0px #000, 3px 3px 0px #000;
+      }
 
 }
