@@ -3,9 +3,7 @@ console.clear();
 gsap.registerPlugin(ScrollTrigger);
 
 window.addEventListener("resize", () => {
-  if (window.innerWidth < 992) {
-    location.reload();
-  }
+  location.reload();
 })
 
 const additionalY = { val: 0 };
